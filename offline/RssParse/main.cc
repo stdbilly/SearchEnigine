@@ -4,6 +4,7 @@
 using std::cout;
 using std::endl;
 using namespace tinyxml2;
+using namespace wd;
 
 void test1() {
      RssReader rssR;

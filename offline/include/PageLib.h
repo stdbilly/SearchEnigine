@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <vector>
+#include "DirScanner.h"
 using std::string;
 using std::vector;
 
@@ -11,7 +12,8 @@ class PageLib {
     ~PageLib();
 
    private:
-   
+   DirScanner& scnner;
+   vector<string> _pages;
 };
 
 PageLib::PageLib(/* args */) {}

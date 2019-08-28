@@ -1,10 +1,7 @@
 #pragma once
-#include <fstream>
-#include <iostream>
 #include <string>
 #include <vector>
 #include "tinyxml2.h"
-using std::ofstream;
 using std::string;
 using std::vector;
 using namespace tinyxml2;
@@ -20,16 +17,18 @@ struct RssItem {
 
 class RssReader {
    public:
-    RssReader();
+    RssReader(vector<string>& files);
     ~RssReader();
-    void parseRss(const char* xmlPath);  //解析
-    void dump(const char* filename);     //输出
-    friend ofstream& operator<<(ofstream& ofs, const RssReader& rhs);
+    void loadFiles();
+    void makePages(vector<string>& pages);
 
    private:
-    XMLElement* init(XMLDocument& doc, const char* xmlPath);
-    void writeToRssItem(XMLElement* item, vector<RssItem>& rss);
-    vector<RssItem> _rss;
+    void parseRss(XMLDocument& doc);
+    void loadXML(const string& xmlPath);  
+   
+   private:
+    vector<RssItem> _rssItems;
+    vector<string> _files;//所有xml文件
 };
 
 }  // namespace wd
