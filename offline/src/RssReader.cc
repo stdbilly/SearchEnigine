@@ -1,4 +1,4 @@
-#include "RssParse.h"
+#include "RssReader.h"
 #include <boost/regex.hpp>
 #include <iostream>
 #include <sstream>
@@ -17,13 +17,14 @@ void RssReader::loadFiles() {
     for (auto& path : _files) {
         loadXML(path);
     }
+    cout << ">> parse xml files success" << endl;
 }
 
 void RssReader::loadXML(const string& xmlPath) {
     XMLDocument doc;
     doc.LoadFile(xmlPath.c_str());
     if (doc.ErrorID()) {
-        cout << "tinyxml load file error!" << endl;
+        cout << ">> tinyxml load file error!" << endl;
         return;
     }
     parseRss(doc);
@@ -34,7 +35,8 @@ void RssReader::parseRss(XMLDocument& doc) {
     XMLElement* channel = root->FirstChildElement("channel");
     XMLElement* item = channel->FirstChildElement("item");
 
-    boost::regex reg("<[^>]*>");
+    //boost::regex reg("<[^>]*>");
+    boost::regex reg("<.*?>");//效果一样
     do {
         RssItem tmp;
         XMLElement* pNode = item->FirstChildElement("title");
@@ -42,16 +44,14 @@ void RssReader::parseRss(XMLDocument& doc) {
         pNode = item->FirstChildElement("link");
         tmp.link = pNode->GetText();
         pNode = item->FirstChildElement("description");
-        const char* descrip = pNode->GetText();
+        string descrip = pNode->GetText();
         pNode = item->FirstChildElement("content:encoded");
-        const char* content = pNode->GetText();
-        if (content) {
-            tmp.content = content;
+        if (pNode) {
+            tmp.content = pNode->GetText();
         } else {
             tmp.content = descrip;
         }
-        tmp.content = boost::regex_replace(
-            tmp.content, reg, "", boost::match_default | boost::format_all);
+		tmp.content = boost::regex_replace(tmp.content, reg, string(""));
         _rssItems.push_back(tmp);
     } while (item = item->NextSiblingElement());
 }

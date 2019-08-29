@@ -1,5 +1,6 @@
 #include "DirScanner.h"
 #include "Configuration.h"
+#include "PageLib.h"
 using namespace wd;
 
 int main() {
@@ -7,6 +8,8 @@ int main() {
     DirScanner scanner;
     scanner();
     //displayS(scanner.getFiles());
-    
+    PageLib pagelib(scanner);
+    pagelib.create();
+    pagelib.store();
     return 0;
 }

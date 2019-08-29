@@ -8,16 +8,13 @@ using std::vector;
 namespace wd {
 class PageLib {
    public:
-    PageLib(/* args */);
-    ~PageLib();
+    PageLib(DirScanner& scanner);
+    void create();
+    void store();
 
    private:
-   DirScanner& scnner;
+   DirScanner& _scanner;
    vector<string> _pages;
 };
-
-PageLib::PageLib(/* args */) {}
-
-PageLib::~PageLib() {}
 
 }  // namespace wd
