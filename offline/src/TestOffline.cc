@@ -1,15 +1,22 @@
-#include "DirScanner.h"
 #include "Configuration.h"
+#include "DirScanner.h"
 #include "PageLib.h"
+#include "PageLibPreprocessor.h"
+#include "tinyxml2.h"
 using namespace wd;
+using namespace tinyxml2;
 
 int main() {
-    Configuration::getInstance("/home/whb/project/RssSearchEnigine/conf/offline.conf");
+    Configuration::getInstance(
+        "/home/whb/project/RssSearchEngine/offline/conf/offline.conf");
     DirScanner scanner;
     scanner();
-    //displayS(scanner.getFiles());
     PageLib pagelib(scanner);
     pagelib.create();
     pagelib.store();
+
+    PageLibPreprocessor processer;
+    processer.doProcess();
+
     return 0;
 }

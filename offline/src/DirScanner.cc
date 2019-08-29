@@ -1,18 +1,20 @@
-#include "Configuration.h"
 #include "DirScanner.h"
 #include <string.h>
 #include <sys/stat.h>
 #include <sys/types.h>
+#include "Configuration.h"
 #include "dirent.h"
 #include "unistd.h"
 
 namespace wd {
-DirScanner::DirScanner() {
-    _files.reserve(20);
-}
+DirScanner::DirScanner() { _files.reserve(20); }
 
 void DirScanner::operator()() {
     traverse(CONFIG[XML_PATH]);
+    cout << ">> import xml files" << endl;
+    for (auto& file : _files) {
+        cout << file << endl;
+    }
 }
 
 void DirScanner::traverse(const string& dirPath) {
@@ -31,9 +33,9 @@ void DirScanner::traverse(const string& dirPath) {
                 strcmp(filedirent->d_name, "..") == 0) {
                 continue;
             } else {
-                traverse(filedirent->d_name); //递归遍历
+                traverse(filedirent->d_name);  //递归遍历
             }
-        } else { 
+        } else {
             string filePath;
             filePath.append(::getcwd(NULL, 0))
                 .append("/")
