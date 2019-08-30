@@ -3,14 +3,11 @@
 #include <iostream>
 #include <sstream>
 #include <unordered_set>
-#include <vector>
 #include "Configuration.h"
 using std::cout;
 using std::endl;
-using std::istringstream;
 using std::ostringstream;
 using std::unordered_set;
-using std::vector;
 
 // this define can avoid some logs which you don't need to care about.
 //#define LOGGER_LEVEL LL_WARN
@@ -25,8 +22,7 @@ WebPage::WebPage(int id, const string& title, const string& link,
     : _docid(id),
       _title(title),
       _link(link),
-      _content(content),
-      _simhashVal(0) {}
+      _content(content) {}
 
 /* void WebPage::generateSimhash() {
     Simhasher simhasher(CONFIG[DICT_PATH], CONFIG[HMM_PATH], CONFIG[IDF_PATH],
@@ -74,9 +70,9 @@ string WebPage::getDoc() {
     return oss.str();
 }
 
-bool WebPage::operator<(const WebPage& rhs) {
-    return _simhashVal < rhs._simhashVal;
-}
+// bool WebPage::operator<(const WebPage& rhs) {
+//     return _simhashVal < rhs._simhashVal;
+// }
 
 // bool WebPage::operator==(const WebPage& rhs) {
 //     return simhash::Simhasher::isEqual(_simhashVal, rhs._simhashVal);

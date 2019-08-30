@@ -9,9 +9,6 @@ using std::endl;
 using std::string;
 
 namespace wd {
-// namespace current_thread {
-// extern __thread int threadID;
-// }
 
 using ThreadCallback = std::function<void()>;
 
