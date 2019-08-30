@@ -1,9 +1,9 @@
-前端搭建步骤:
+ǰ�˴����:
 
 $ sudo apt-get update
 $ sudo apt-get upgrade
 $ sudo apt-get install apache2
 $ sudo apt-get install php7.0 libapache2-mod-php7.0
 
-把php_TCP文件夹移动到/var/www/html/路径之下
-在浏览器中输入http://192.168.4.179/php_TCP/index.html
+��php_TCP�ļ����ƶ���/var/www/html/·��֮��
+�������������http://127.0.0.1/php_TCP/index.html

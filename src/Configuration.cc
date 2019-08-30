@@ -48,5 +48,22 @@ void Configuration::readFile(const string& filename) {
     cout << ">> read config file success" << endl;
 }
 
+unordered_set<string>& Configuration::getStopWords() {
+    if (_stopWords.size() > 0) {
+        return _stopWords;
+    }
+
+    ifstream ifs(_configMap[STOP_WORD_PATH]);
+    if (!ifs) {
+        perror("fopen");
+    }
+
+    string line;
+    while (getline(ifs, line)) {
+        _stopWords.insert(line);
+    }
+    return _stopWords;
+}
+
 Configuration* Configuration::_pInstance = nullptr;
 }  // namespace wd
