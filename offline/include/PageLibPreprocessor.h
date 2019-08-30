@@ -2,11 +2,12 @@
 #include "WebPage.h"
 #include <vector>
 using std::vector;
+using std::pair;
 
 namespace wd {
 class PageLibPreprocessor {
    public:
-    PageLibPreprocessor(/* args */);
+    PageLibPreprocessor();
 
     void doProcess();
     void readPageFromFile();
@@ -16,6 +17,7 @@ class PageLibPreprocessor {
 
    private:
     vector<WebPage> _pageLib;
+    unordered_map<string, vector<pair<int, double>>> _invertIndexTable;
 };
 
 }  // namespace wd

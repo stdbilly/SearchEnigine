@@ -12,6 +12,8 @@ class WebPage {
     int getDocId() { return _docid; }
     uint64_t getSimhash() { return _simhashVal; }
     string getDoc();
+    unordered_map<string, int>& getWordsMap() { return _wordsMap; }
+
     void generateSimhash();
     void buildWordsMap();
     bool operator<(const WebPage& rhs);
