@@ -24,7 +24,7 @@ class RssReader {
 
    private:
     void parseRss(XMLDocument& doc);
-    void loadXML(const string& xmlPath);  
+    void loadXML(const string& xmlPath); 
    
    private:
     vector<RssItem> _rssItems;

@@ -4,12 +4,14 @@
 #include <sstream>
 using std::cout;
 using std::endl;
+using std::istringstream;
 using std::ostringstream;
 
 namespace wd {
 
-RssReader::RssReader(vector<string>& files) 
-: _files(files) { cout << "RssReader()" << endl; }
+RssReader::RssReader(vector<string>& files) : _files(files) {
+    cout << "RssReader()" << endl;
+}
 
 RssReader::~RssReader() { cout << " ~RssReader()" << endl; }
 
@@ -35,8 +37,6 @@ void RssReader::parseRss(XMLDocument& doc) {
     XMLElement* channel = root->FirstChildElement("channel");
     XMLElement* item = channel->FirstChildElement("item");
 
-    //boost::regex reg("<[^>]*>");
-    boost::regex reg("<.*?>");//效果一样
     do {
         RssItem tmp;
         XMLElement* pNode = item->FirstChildElement("title");
@@ -46,12 +46,21 @@ void RssReader::parseRss(XMLDocument& doc) {
         pNode = item->FirstChildElement("description");
         string descrip = pNode->GetText();
         pNode = item->FirstChildElement("content:encoded");
+
         if (pNode) {
             tmp.content = pNode->GetText();
         } else {
             tmp.content = descrip;
         }
-		tmp.content = boost::regex_replace(tmp.content, reg, string(""));
+
+        // boost::regex reg("<[^>]*>");
+        boost::regex reg("<.*?>");  //效果一样
+        tmp.content = boost::regex_replace(tmp.content, reg, "");
+        //去掉多余的空格和换行
+        // boost::regex reg2("[\\s]+");
+        boost::regex reg2(R"(( )+|(\n)+)");
+        tmp.content = boost::regex_replace(tmp.content, reg2, "$1$2");
+
         _rssItems.push_back(tmp);
     } while (item = item->NextSiblingElement());
 }

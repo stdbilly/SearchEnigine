@@ -33,6 +33,7 @@ void WebPage::generateSimhash() {
     simhasher.extract(_content, res, topN);
     simhasher.make(_content, topN, _simhashVal);
 
+    cout << "docid: " << _docid << endl;
     cout << "关键词序列: " << res << endl;
     cout << "simhash值: " << _simhashVal << endl;
 }

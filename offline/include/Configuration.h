@@ -15,6 +15,8 @@ namespace wd {
 #define XML_PATH "xmlDir"
 #define RIPEPAGE_PATH "ripepageLib"
 #define OFFSET_PATH "offsetLib"
+#define NEW_RIPEPAGE_PATH  "newRipepageLib"
+#define NEW_OFFSET_PATH "newOffsetLib"
 #define DICT_PATH "dict"
 #define HMM_PATH "hmm_model"
 #define IDF_PATH "idf"

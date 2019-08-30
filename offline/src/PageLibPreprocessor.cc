@@ -35,19 +35,31 @@ void PageLibPreprocessor::readPageFromFile() {
 
 void PageLibPreprocessor::cutRedundantPages() {
     cout << ">> before cut: " << _pageLib.size() << endl;
+    int i = 0;
     for (auto& page : _pageLib) {
+        cout << ++i << endl;
         page.generateSimhash();
     }
     std::sort(_pageLib.begin(), _pageLib.end());
+
+    /* ofstream ofsSort("/home/whb/project/RssSearchEngine/offline/data/sorted.dat");
+    for (auto& page : _pageLib) {
+        string temp = page.getDoc();
+        ofsSort << page.getSimhash() << '\n' << temp;
+    }
+    cout << ">> store sorted ripepage success" << endl;
+    ofsSort.close();  */
+
     auto it = std::unique(_pageLib.begin(), _pageLib.end());
+
     _pageLib.erase(it, _pageLib.end());
     cout << ">> after cut: " << _pageLib.size() << endl;
     cout << ">> cut redundant pages success" << endl;
 }
 
 void PageLibPreprocessor::store() {
-    ofstream ofsPage(CONFIG[RIPEPAGE_PATH]);
-    ofstream ofsOffset(CONFIG[OFFSET_PATH]);
+    ofstream ofsPage(CONFIG[NEW_RIPEPAGE_PATH]);
+    ofstream ofsOffset(CONFIG[NEW_OFFSET_PATH]);
 
     for (auto& page : _pageLib) {
         int id = page.getDocId();

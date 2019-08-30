@@ -10,6 +10,7 @@ class WebPage {
     WebPage(int id, const string& title, const string& link, const string& content);
 
     int getDocId() { return _docid; }
+    uint64_t getSimhash() { return _simhashVal; }
     string getDoc();
     void generateSimhash();
     void buildWordsMap();
