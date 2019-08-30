@@ -4,7 +4,10 @@
 #include <iostream>
 #include <string>
 using std::string;
+using std::to_string;
 using namespace log4cpp;
+
+namespace wd{
 
 #define suffix(msg)                  \
     std::string(msg)                 \
@@ -66,3 +69,5 @@ class Mylogger {
     Mylogger::getInstance()->info(suffix(msg), ##__VA_ARGS__)
 #define LogDebug(msg, ...) \
     Mylogger::getInstance()->debug(suffix(msg), ##__VA_ARGS__)
+
+}

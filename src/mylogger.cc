@@ -8,6 +8,8 @@
 using std::cout;
 using std::endl;
 
+namespace wd{
+
 Mylogger* Mylogger::getInstance() {
     pthread_once(&_once, init);
     return _pInstance;
@@ -27,17 +29,17 @@ void Mylogger::destroy() {
 
 Mylogger::Mylogger()
     : _mycategory(Category::getRoot().getInstance("mycategory")) {
-    //PatternLayout* ptnLayout1 = (new PatternLayout());
+    PatternLayout* ptnLayout1 = (new PatternLayout());
     PatternLayout* ptnLayout2 = (new PatternLayout());
-    //OstreamAppender* ostreamAppender =
+    OstreamAppender* ostreamAppender =
         (new OstreamAppender("OstreamAppender", &cout));
     FileAppender* fileAppender = (new FileAppender("FileAppender", _filename));
-    //ptnLayout1->setConversionPattern("%d [%p] %m%n");
+    ptnLayout1->setConversionPattern("%d [%p] %m%n");
     ptnLayout2->setConversionPattern("%d [%p] %m%n");
-    //ostreamAppender->setLayout(ptnLayout1);
+    ostreamAppender->setLayout(ptnLayout1);
     fileAppender->setLayout(ptnLayout2);
     _mycategory.setPriority(Priority::DEBUG);
-    //_mycategory.addAppender(ostreamAppender);
+    _mycategory.addAppender(ostreamAppender);
     _mycategory.addAppender(fileAppender);
 }
 
@@ -45,4 +47,6 @@ Mylogger::~Mylogger() { Category::shutdown(); }
 
 Mylogger* Mylogger::_pInstance = nullptr;
 pthread_once_t Mylogger::_once = PTHREAD_ONCE_INIT;
-string Mylogger::_filename = "test.log";
+string Mylogger::_filename = "/home/whb/project/RssSearchEngine/log/search.log";
+
+}

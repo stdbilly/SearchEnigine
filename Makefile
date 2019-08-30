@@ -1,18 +1,18 @@
-INC_DIR1:= ../../include/ ../../include/cppjieba/ ../../include/limonp
-SRC_DIR1:= ./
-SRCS1:=$(wildcard *.cc) $(wildcard ../Configuration.cc)   
-OBJS1:= $(patsubst %.cc, %.o, $(SRCS1))
-LIBS:= -lpthread
+INC_DIR:= include/ 
+SRC_DIR:= src/
+SRCS:=$(wildcard src/*.cc) $(wildcard src/net/*.cc) $(wildcard src/threadpool/*.cc) 
+OBJS:= $(patsubst %.cc, %.o, $(SRCS))
+LIBS:= -llog4cpp -lpthread
 
 CXX:=g++
 
-CXXFLAGS1:= -w -g  $(addprefix -I, $(INC_DIR1)) $(LIBS) 
+CXXFLAGS:= -w -g  $(addprefix -I , $(INC_DIR)) $(LIBS) 
 
-EXE1:=../../bin/offline.exe
+EXE:=bin/SearchEngine.exe
 
-$(EXE1):$(OBJS1)
-	$(CXX) -o $(EXE1) $(OBJS1) $(CXXFLAGS1)
+$(EXE):$(OBJS)
+	$(CXX) -o $(EXE) $(OBJS) $(CXXFLAGS)
 
 clean:
-	rm -rf $(EXE1)
-	rm -rf $(OBJS1)
+	rm -rf $(EXE)
+	rm -rf $(OBJS)
