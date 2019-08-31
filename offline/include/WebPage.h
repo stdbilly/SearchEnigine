@@ -1,6 +1,8 @@
 #pragma ocne
 #include <string>
 #include <unordered_map>
+#include "simhash/Simhasher.hpp"
+#include "cppjieba/Jieba.hpp"
 using std::unordered_map;
 using std::string;
 
@@ -14,8 +16,8 @@ class WebPage {
     string getDoc();
     unordered_map<string, int>& getWordsMap() { return _wordsMap; }
 
-    void generateSimhash();
-    void buildWordsMap();
+    void generateSimhash(simhash::Simhasher& simhasher);
+    void buildWordsMap(cppjieba::Jieba& jieba);
     bool operator<(const WebPage& rhs);
     bool operator==(const WebPage& rhs);
 

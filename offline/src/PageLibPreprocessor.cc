@@ -52,9 +52,12 @@ void PageLibPreprocessor::readPageFromFile() {
 }
 
 void PageLibPreprocessor::cutRedundantPages() {
+    simhash::Simhasher simhasher(CONFIG[DICT_PATH], CONFIG[HMM_PATH], CONFIG[IDF_PATH],
+                        CONFIG[STOP_WORD_PATH]);
+
     cout << ">> before cut: " << _pageLib.size() << endl;
     for (auto& page : _pageLib) {
-        page.generateSimhash();
+        page.generateSimhash(simhasher);
     }
     std::sort(_pageLib.begin(), _pageLib.end());
 
@@ -73,8 +76,11 @@ void PageLibPreprocessor::cutRedundantPages() {
 }
 
 void PageLibPreprocessor::buildInvertIndex() {
+    cppjieba::Jieba jieba(CONFIG[DICT_PATH], CONFIG[HMM_PATH], CONFIG[USER_DICT_PATH],
+                CONFIG[IDF_PATH], CONFIG[STOP_WORD_PATH]);
+
     for (auto& page : _pageLib) {
-        page.buildWordsMap();
+        page.buildWordsMap(jieba);
     }
 
     for (auto& page : _pageLib) {
@@ -135,7 +141,6 @@ void PageLibPreprocessor::store() {
         ofsIndex << '\n';
     }
 
-    _invertIndexTable.clear();//不清空会造成栈溢出
     ofsIndex.close();
     cout << ">> store invert index success" << endl;
 }
