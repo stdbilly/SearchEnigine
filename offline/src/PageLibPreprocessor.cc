@@ -75,9 +75,6 @@ void PageLibPreprocessor::cutRedundantPages() {
 }
 
 void PageLibPreprocessor::buildInvertIndex() {
-    cppjieba::Jieba jieba(CONFIG[DICT_PATH], CONFIG[HMM_PATH], CONFIG[USER_DICT_PATH],
-                CONFIG[IDF_PATH], CONFIG[STOP_WORD_PATH]);
-
     for (auto& page : _pageLib) {
         page.buildWordsMap(_jieba);
     }

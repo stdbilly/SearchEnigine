@@ -1,6 +1,5 @@
 #pragma once
 #include "WebPage.h"
-#include "WordSegmentation.h"
 #include <vector>
 using std::vector;
 using std::pair;
