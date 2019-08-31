@@ -4,7 +4,6 @@
 #include <cmath>
 #include <fstream>
 #include <iostream>
-#include "Configuration.h"
 #include "tinyxml2.h"
 using std::cout;
 using std::endl;
@@ -13,7 +12,7 @@ using std::ofstream;
 using namespace tinyxml2;
 
 namespace wd {
-PageLibPreprocessor::PageLibPreprocessor() { _pageLib.reserve(400); }
+PageLibPreprocessor::PageLibPreprocessor() { _pageLib.reserve(300); }
 
 void PageLibPreprocessor::doProcess() {
     readPageFromFile();
@@ -57,7 +56,7 @@ void PageLibPreprocessor::cutRedundantPages() {
 
     cout << ">> before cut: " << _pageLib.size() << endl;
     for (auto& page : _pageLib) {
-        page.generateSimhash(simhasher);
+        page.generateSimhash(_jieba);
     }
     std::sort(_pageLib.begin(), _pageLib.end());
 
@@ -80,7 +79,7 @@ void PageLibPreprocessor::buildInvertIndex() {
                 CONFIG[IDF_PATH], CONFIG[STOP_WORD_PATH]);
 
     for (auto& page : _pageLib) {
-        page.buildWordsMap(jieba);
+        page.buildWordsMap(_jieba);
     }
 
     for (auto& page : _pageLib) {

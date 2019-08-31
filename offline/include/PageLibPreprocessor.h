@@ -1,5 +1,6 @@
 #pragma once
 #include "WebPage.h"
+#include "WordSegmentation.h"
 #include <vector>
 using std::vector;
 using std::pair;
@@ -16,6 +17,7 @@ class PageLibPreprocessor {
     void store();
 
    private:
+    WordSegmentation _jieba;
     vector<WebPage> _pageLib;
     unordered_map<string, vector<pair<int, double>>> _invertIndexTable;
 };

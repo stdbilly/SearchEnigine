@@ -1,16 +1,11 @@
-#pragma once
 #include "WebPage.h"
 #include <chrono>
 #include <iostream>
 #include <sstream>
-#include <unordered_set>
 #include <vector>
-#include "Configuration.h"
 using std::cout;
 using std::endl;
-using std::istringstream;
 using std::ostringstream;
-using std::unordered_set;
 using std::vector;
 
 // this define can avoid some logs which you don't need to care about.
@@ -25,27 +20,17 @@ WebPage::WebPage(int id, const string& title, const string& link,
       _content(content),
       _simhashVal(0) {}
 
-void WebPage::generateSimhash(simhash::Simhasher& simhasher) {
-    using namespace simhash;
-
+void WebPage::generateSimhash(WordSegmentation& simhasher) {
     size_t topN = 6;
-    vector<pair<string, double>> res;
-    simhasher.extract(_content, res, topN);
-    simhasher.make(_content, topN, _simhashVal);
-
-    // cout << "docid: " << _docid << endl;
-    // cout << "key words: " << res << endl;
-    // cout << "simhash: " << _simhashVal << endl;
+    _simhashVal = simhasher.makeSimhash(_content, topN);
 }
 
-void WebPage::buildWordsMap(cppjieba::Jieba& jieba) {
-    using namespace cppjieba;
-
+void WebPage::buildWordsMap(WordSegmentation& jieba) {
     unordered_set<string>& stopWords =
         Configuration::getInstance()->getStopWords();
 
-    vector<string> words;
-    jieba.CutAll(_content, words);
+    vector<string> words = jieba.cutWords(_content);
+
     for (auto& word : words) {
         if (stopWords.count(word) == 0) {
             ++_wordsMap[word];

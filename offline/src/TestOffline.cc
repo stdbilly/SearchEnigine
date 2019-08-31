@@ -1,4 +1,3 @@
-#include "Configuration.h"
 #include "DirScanner.h"
 #include "PageLib.h"
 #include "PageLibPreprocessor.h"
