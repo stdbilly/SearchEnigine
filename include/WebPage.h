@@ -12,16 +12,18 @@ class WebPage {
     WebPage(int id, const string& title, const string& link, const string& content);
 
     int getDocId() { return _docid; }
-    //uint64_t getSimhash() { return _simhashVal; }
-    string getDoc();
-    unordered_map<string, int>& getWordsMap() { return _wordsMap; }
-
-    //void generateSimhash();
-    void buildWordsMap();
+    string getTitle() { return _title; }
+    string getContent() { return _content; }
     string summary(const vector<string>& queryWords);
 
-    bool operator<(const WebPage& rhs);
-    bool operator==(const WebPage& rhs);
+    //string getDoc();
+    //unordered_map<string, int>& getWordsMap() { return _wordsMap; }
+
+    //void generateSimhash();
+    //void buildWordsMap();
+
+    // bool operator<(const WebPage& rhs);
+    // bool operator==(const WebPage& rhs);
 
    private:
     int _docid;
@@ -29,7 +31,7 @@ class WebPage {
     string _link;
     string _content;
     //uint64_t _simhashVal;
-    unordered_map<string, int> _wordsMap;
+    //unordered_map<string, int> _wordsMap;
 };
 
 }  // namespace wd

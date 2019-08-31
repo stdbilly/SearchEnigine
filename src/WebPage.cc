@@ -6,15 +6,6 @@
 #include "Configuration.h"
 using std::cout;
 using std::endl;
-using std::ostringstream;
-using std::unordered_set;
-
-// this define can avoid some logs which you don't need to care about.
-//#define LOGGER_LEVEL LL_WARN
-
-#include "cppjieba/Jieba.hpp"
-// #include "simhash/Simhasher.hpp"
-// using namespace simhash;
 
 namespace wd {
 WebPage::WebPage(int id, const string& title, const string& link,
@@ -23,6 +14,11 @@ WebPage::WebPage(int id, const string& title, const string& link,
       _title(title),
       _link(link),
       _content(content) {}
+
+    // string WebPage::summary(const vector<string>& queryWords) {
+
+    // }
+    
 
 /* void WebPage::generateSimhash() {
     Simhasher simhasher(CONFIG[DICT_PATH], CONFIG[HMM_PATH], CONFIG[IDF_PATH],
@@ -37,38 +33,38 @@ WebPage::WebPage(int id, const string& title, const string& link,
     cout << "simhash: " << _simhashVal << endl;
 } */
 
-void WebPage::buildWordsMap() {
-    unordered_set<string>& stopWords =
-        Configuration::getInstance()->getStopWords();
+// void WebPage::buildWordsMap() {
+//     unordered_set<string>& stopWords =
+//         Configuration::getInstance()->getStopWords();
 
-    using namespace cppjieba;
-    Jieba jieba(CONFIG[DICT_PATH], CONFIG[HMM_PATH], CONFIG[USER_DICT_PATH],
-                CONFIG[IDF_PATH], CONFIG[STOP_WORD_PATH]);
+//     using namespace cppjieba;
+//     Jieba jieba(CONFIG[DICT_PATH], CONFIG[HMM_PATH], CONFIG[USER_DICT_PATH],
+//                 CONFIG[IDF_PATH], CONFIG[STOP_WORD_PATH]);
 
-    istringstream iss(_content);
-    string s;
-    while (iss >> s) {
-        vector<string> words;
-        jieba.Cut(s, words, true);
-        for (auto& word : words) {
-            if (stopWords.count(word) == 0) {
-                ++_wordsMap[word];
-            }
-        }
-    }
-    // cout << _docid << endl;
-}
+//     istringstream iss(_content);
+//     string s;
+//     while (iss >> s) {
+//         vector<string> words;
+//         jieba.Cut(s, words, true);
+//         for (auto& word : words) {
+//             if (stopWords.count(word) == 0) {
+//                 ++_wordsMap[word];
+//             }
+//         }
+//     }
+//     // cout << _docid << endl;
+// }
 
-string WebPage::getDoc() {
-    ostringstream oss;
-    oss << "<doc>" << '\n'
-        << '\t' << "<docid>" << _docid << "</docid>" << '\n'
-        << '\t' << "<title>" << _title << "</title>" << '\n'
-        << '\t' << "<link>" << _link << "</link>" << '\n'
-        << '\t' << "<content>" << _content << "</content>" << '\n'
-        << "</doc>" << '\n';
-    return oss.str();
-}
+// string WebPage::getDoc() {
+//     ostringstream oss;
+//     oss << "<doc>" << '\n'
+//         << '\t' << "<docid>" << _docid << "</docid>" << '\n'
+//         << '\t' << "<title>" << _title << "</title>" << '\n'
+//         << '\t' << "<link>" << _link << "</link>" << '\n'
+//         << '\t' << "<content>" << _content << "</content>" << '\n'
+//         << "</doc>" << '\n';
+//     return oss.str();
+// }
 
 // bool WebPage::operator<(const WebPage& rhs) {
 //     return _simhashVal < rhs._simhashVal;
