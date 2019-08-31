@@ -21,6 +21,7 @@ class RssReader {
     ~RssReader();
     void loadFiles();
     void makePages(vector<string>& pages);
+    void createXML();
 
    private:
     void parseRss(XMLDocument& doc);

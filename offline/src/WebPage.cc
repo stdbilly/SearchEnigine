@@ -7,6 +7,7 @@ using std::cout;
 using std::endl;
 using std::ostringstream;
 using std::vector;
+using std::to_string;
 
 // this define can avoid some logs which you don't need to care about.
 #define LOGGER_LEVEL LL_WARN
@@ -36,6 +37,24 @@ void WebPage::buildWordsMap(WordSegmentation& jieba) {
             ++_wordsMap[word];
         }
     }
+}
+
+void WebPage::insertDoc(XMLDocument& pageLib) {
+    XMLElement* doc = pageLib.NewElement("doc");
+    pageLib.InsertEndChild(doc);
+    XMLElement* docid = pageLib.NewElement("docid");
+    XMLText* docidText = pageLib.NewText(to_string(_docid).c_str());
+    docid->InsertEndChild(docidText);
+    doc->InsertEndChild(docid);
+    XMLElement* title = pageLib.NewElement("title");
+    title->InsertEndChild(pageLib.NewText(_title.c_str()));
+    doc->InsertEndChild(title);
+    XMLElement* link = pageLib.NewElement("link");
+    link->InsertEndChild(pageLib.NewText(_link.c_str()));
+    doc->InsertEndChild(link);
+    XMLElement* content = pageLib.NewElement("content");
+    content->InsertEndChild(pageLib.NewText(_content.c_str()));
+    doc->InsertEndChild(content);
 }
 
 string WebPage::getDoc() {

@@ -12,7 +12,7 @@ int main() {
     scanner();
     PageLib pagelib(scanner);
     pagelib.create();
-    pagelib.store();
+    // pagelib.store();
 
     PageLibPreprocessor processer;
     processer.doProcess();

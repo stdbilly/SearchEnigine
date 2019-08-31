@@ -1,4 +1,6 @@
+#include "Configuration.h"
 #include "RssReader.h"
+#include <string.h>
 #include <boost/regex.hpp>
 #include <iostream>
 #include <sstream>
@@ -6,6 +8,7 @@ using std::cout;
 using std::endl;
 using std::istringstream;
 using std::ostringstream;
+using std::to_string;
 
 namespace wd {
 
@@ -63,6 +66,33 @@ void RssReader::parseRss(XMLDocument& doc) {
 
         _rssItems.push_back(tmp);
     } while (item = item->NextSiblingElement());
+}
+
+void RssReader::createXML() {
+    string declaration = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
+    XMLDocument pageLib;
+    pageLib.Parse(declaration.c_str());
+
+    int i = 0;
+    for (auto& item : _rssItems) {
+        XMLElement* doc = pageLib.NewElement("doc");
+        pageLib.InsertEndChild(doc);
+        XMLElement* docid = pageLib.NewElement("docid");
+        XMLText* docidText = pageLib.NewText(to_string(++i).c_str());
+        docid->InsertEndChild(docidText);
+        doc->InsertEndChild(docid);
+        XMLElement* title = pageLib.NewElement("title");
+        title->InsertEndChild(pageLib.NewText(item.title.c_str()));
+        doc->InsertEndChild(title);
+        XMLElement* link = pageLib.NewElement("link");
+        link->InsertEndChild(pageLib.NewText(item.link.c_str()));
+        doc->InsertEndChild(link);
+        XMLElement* content = pageLib.NewElement("content");
+        content->InsertEndChild(pageLib.NewText(item.content.c_str()));
+        doc->InsertEndChild(content);
+    }
+
+    pageLib.SaveFile(CONFIG[RIPEPAGE_PATH].c_str());
 }
 
 void RssReader::makePages(vector<string>& pages) {

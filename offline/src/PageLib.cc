@@ -1,6 +1,6 @@
+#include "Configuration.h"
 #include "PageLib.h"
 #include <fstream>
-#include "Configuration.h"
 #include "RssReader.h"
 using std::ofstream;
 
@@ -11,7 +11,8 @@ void PageLib::create() {
     vector<string>& files = _scanner.getFiles();
     RssReader reader(files);
     reader.loadFiles();
-    reader.makePages(_pages);
+    //reader.makePages(_pages);
+    reader.createXML();
 }
 
 void PageLib::store() {

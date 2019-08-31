@@ -2,6 +2,8 @@
 #include <string>
 #include <unordered_map>
 #include "WordSegmentation.h"
+#include "tinyxml2.h"
+using namespace tinyxml2;
 using std::unordered_map;
 using std::string;
 
@@ -12,6 +14,7 @@ class WebPage {
 
     int getDocId() { return _docid; }
     uint64_t getSimhash() { return _simhashVal; }
+    void insertDoc(XMLDocument& pageLib);
     string getDoc();
     unordered_map<string, int>& getWordsMap() { return _wordsMap; }
 
