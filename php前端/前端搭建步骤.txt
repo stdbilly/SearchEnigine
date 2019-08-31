@@ -1,9 +1,9 @@
-0¢2„1¤70»4ƒ8‡5„1¤7„1¤7„1¤7„1¤7:
+ï¿½0ï¿½2ï¿½1ï¿½7ï¿½0ï¿½4ï¿½8ï¿½5ï¿½1ï¿½7ï¿½1ï¿½7ï¿½1ï¿½7ï¿½1ï¿½7:
 
 $ sudo apt-get update
 $ sudo apt-get upgrade
 $ sudo apt-get install apache2
-$ sudo apt-get install php7.0 libapache2-mod-php7.0
+$ sudo apt-get install php7.2 libapache2-mod-php7.2
 
-„1¤7„1¤7php_TCP„1¤70‘4„1¤7„1¤7„1¤7„1¤702„1¤7„1¤7„1¤7/var/www/html/¡¤„1¤7„1¤70õ8„1¤7„1¤7
-„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7„1¤7http://127.0.0.1/php_TCP/index.html
+ï¿½1ï¿½7ï¿½1ï¿½7php_TCPï¿½1ï¿½7ï¿½0ï¿½4ï¿½1ï¿½7ï¿½1ï¿½7ï¿½1ï¿½7ï¿½1ï¿½7ï¿½0ï¿½2ï¿½1ï¿½7ï¿½1ï¿½7ï¿½1ï¿½7/var/www/html/ï¿½ï¿½ï¿½1ï¿½7ï¿½1ï¿½7ï¿½0ï¿½8ï¿½1ï¿½7ï¿½1ï¿½7
+ï¿½1ï¿½7ï¿½1ï¿½7ï¿½1ï¿½7ï¿½1ï¿½7ï¿½1ï¿½7ï¿½1ï¿½7ï¿½1ï¿½7ï¿½1ï¿½7ï¿½1ï¿½7ï¿½1ï¿½7ï¿½1ï¿½7ï¿½1ï¿½7ï¿½1ï¿½7http://192.168.4.179/php_TCP/index.html

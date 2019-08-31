@@ -4,12 +4,10 @@
 #include <cmath>
 #include <fstream>
 #include <iostream>
-#include "tinyxml2.h"
 using std::cout;
 using std::endl;
 using std::make_pair;
 using std::ofstream;
-using namespace tinyxml2;
 
 namespace wd {
 PageLibPreprocessor::PageLibPreprocessor() { _pageLib.reserve(300); }

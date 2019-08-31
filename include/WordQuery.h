@@ -1,14 +1,15 @@
 #pragma once
-#include "WebPage.h"
+#include <set>
 #include <string>
 #include <unordered_map>
-#include <set>
-#include <vector>;
+#include <vector>
+#include "WebPage.h"
+#include "WordSegmentation.h"
+using std::pair;
+using std::set;
 using std::string;
 using std::unordered_map;
 using std::vector;
-using std::set;
-using std::pair;
 
 namespace wd {
 class WordQuery {
@@ -16,8 +17,12 @@ class WordQuery {
     WordQuery();
 
     void loadLibrary();
+    string doQuery(const string& str);
+    private:
+    string returnNoAnswer();
 
    private:
+    WordSegmentation _jieba;
     unordered_map<int, WebPage> _pageLib;
     unordered_map<string, set<pair<int, double>>> _invertIndex;
 };

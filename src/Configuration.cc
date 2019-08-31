@@ -1,4 +1,5 @@
-#include "../include/Configuration.h"
+#include "Configuration.h"
+#include "mylogger.h"
 #include <fstream>
 #include <iostream>
 #include <sstream>
@@ -45,7 +46,7 @@ void Configuration::readFile(const string& filename) {
         iss >> key >> value;
         _configMap.insert(make_pair(key, value));
     }
-    cout << ">> read config file success" << endl;
+    LogDebug("read config file success");
 }
 
 unordered_set<string>& Configuration::getStopWords() {

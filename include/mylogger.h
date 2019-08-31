@@ -13,7 +13,7 @@ namespace wd{
     std::string(msg)                 \
         .append(" [")                \
         .append(__FILE__)            \
-        .append(":")                 \
+        .append(" : ")                 \
         .append(__func__)            \
         .append(":")                 \
         .append(to_string(__LINE__)) \

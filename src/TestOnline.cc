@@ -1,13 +1,18 @@
 #include "WordQuery.h"
-#include "Configuration.h"
+#include "WordQueryServer.h"
 #include "mylogger.h"
+using std::stoi;
 using namespace wd;
 
 int main() {
-    Configuration::getInstance("/home/whb/project/RssSearchEngine/conf/online.conf");
+    Configuration::getInstance(
+        "/home/whb/project/RssSearchEngine/conf/online.conf");
 
-    WordQuery wordquery;
-    
+    WordQueryServer server(stoi(CONFIG["threadNum"]), stoi(CONFIG["queSize"]),
+                           CONFIG["ip"], stoi(CONFIG["port"]));
+
+    server.start();
+
     Mylogger::destroy();
     return 0;
 }
