@@ -19,7 +19,6 @@ void WordQueryServer::start() {
 
 void WordQueryServer::onConnection(const TCPConnectionPtr& conn) {
     cout << conn->toString() << " connected" << endl;
-    conn->send("welcome to server");
 }
 
 void WordQueryServer::onMessage(const TCPConnectionPtr& conn) {

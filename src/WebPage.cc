@@ -1,77 +1,68 @@
-#pragma once
 #include "WebPage.h"
 #include <iostream>
 #include <sstream>
-#include <unordered_set>
 #include "Configuration.h"
 using std::cout;
 using std::endl;
+using std::istringstream;
 
 namespace wd {
 WebPage::WebPage(int id, const string& title, const string& link,
                  const string& content)
-    : _docid(id),
-      _title(title),
-      _link(link),
-      _content(content) {}
+    : _docid(id), _title(title), _link(link), _content(content) {}
 
-    // string WebPage::summary(const vector<string>& queryWords) {
+string WebPage::summary(const vector<string>& queryWords) {
+    vector<string> summaryVec;
 
-    // }
-    
+    istringstream iss(_content);
+    string line;
+    while (iss >> line) {
+        for (auto word : queryWords) {
+            size_t pos = line.find(word);
+            if (pos != string::npos) {
+                string temp = getNLenString(line, pos, 60);
+                temp.append("...");
+                summaryVec.push_back(line);
+                break;
+            }
+        }
 
-/* void WebPage::generateSimhash() {
-    Simhasher simhasher(CONFIG[DICT_PATH], CONFIG[HMM_PATH], CONFIG[IDF_PATH],
-                        CONFIG[STOP_WORD_PATH]);
-    size_t topN = 6;
-    vector<pair<string, double>> res;
-    simhasher.extract(_content, res, topN);
-    simhasher.make(_content, topN, _simhashVal);
+        if (summaryVec.size() >= 3) {
+            break;
+        }
+    }
 
-    cout << "docid: " << _docid << endl;
-    cout << "key words: " << res << endl;
-    cout << "simhash: " << _simhashVal << endl;
-} */
+    string summary;
+    for (auto s : summaryVec) {
+        summary.append(s).append("\n");
+    }
+    return summary;
+}
 
-// void WebPage::buildWordsMap() {
-//     unordered_set<string>& stopWords =
-//         Configuration::getInstance()->getStopWords();
+string WebPage::getNLenString(string& str, size_t pos, int len) {
+    int ilen = 0;
+    size_t beg = pos;
 
-//     using namespace cppjieba;
-//     Jieba jieba(CONFIG[DICT_PATH], CONFIG[HMM_PATH], CONFIG[USER_DICT_PATH],
-//                 CONFIG[IDF_PATH], CONFIG[STOP_WORD_PATH]);
+    while (ilen < len && pos != str.size()) {
+        size_t bytes = getBytes(str[pos]);
+        pos += bytes;
+        ++ilen;
+    }
+    return str.substr(beg, pos);
+}
 
-//     istringstream iss(_content);
-//     string s;
-//     while (iss >> s) {
-//         vector<string> words;
-//         jieba.Cut(s, words, true);
-//         for (auto& word : words) {
-//             if (stopWords.count(word) == 0) {
-//                 ++_wordsMap[word];
-//             }
-//         }
-//     }
-//     // cout << _docid << endl;
-// }
+size_t WebPage::getBytes(const char ch) {
+    if (ch & (1 << 7)) {
+        int nBytes = 1;
+        for (int idx = 0; idx != 6; ++idx) {
+            if (ch & (1 << (6 - idx))) {
+                ++nBytes;
+            } else
+                break;
+        }
+        return nBytes;
+    }
+    return 1;
+}
 
-// string WebPage::getDoc() {
-//     ostringstream oss;
-//     oss << "<doc>" << '\n'
-//         << '\t' << "<docid>" << _docid << "</docid>" << '\n'
-//         << '\t' << "<title>" << _title << "</title>" << '\n'
-//         << '\t' << "<link>" << _link << "</link>" << '\n'
-//         << '\t' << "<content>" << _content << "</content>" << '\n'
-//         << "</doc>" << '\n';
-//     return oss.str();
-// }
-
-// bool WebPage::operator<(const WebPage& rhs) {
-//     return _simhashVal < rhs._simhashVal;
-// }
-
-// bool WebPage::operator==(const WebPage& rhs) {
-//     return simhash::Simhasher::isEqual(_simhashVal, rhs._simhashVal);
-// }
-
-}  // namespace wd
+}

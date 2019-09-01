@@ -45,7 +45,7 @@ void EventLoop::waitEpollFd() {
     int nready;
     do {
         nready =
-            epoll_wait(_efd, &*_eventList.begin(), _eventList.size(), 15000);
+            epoll_wait(_efd, &*_eventList.begin(), _eventList.size(), 5000);
     } while (nready == -1 && errno == EINTR);
 
     if (nready == -1) {
@@ -70,6 +70,7 @@ void EventLoop::waitEpollFd() {
                     handleRead();
                     cout << ">> do pending functors" << endl;
                     doPendingFunctors();
+                    cout << ">> finish do pending functors" << endl;
                 }
             } else {
                 //处理消息
@@ -111,7 +112,7 @@ bool EventLoop::isConnectionClosed(int fd) {
         char buf[1024];
         ret = recv(fd, buf, sizeof(buf), MSG_PEEK);
     } while (ret == -1 && errno == EINTR);
-    return (ret == 0);
+    return (ret == 0 || ret == -1);
 }
 
 int EventLoop::createEpollFd() {

@@ -17,10 +17,17 @@ class WordSegmentation {
                  CONFIG[IDF_PATH], CONFIG[STOP_WORD_PATH]) {
         cout << ">> jieba init" << endl;
     }
-    
+
     vector<string> operator()(const string& str) {
         vector<string> words;
         _jieba.Cut(str, words, true);
+        auto stopWords = Configuration::getInstance()->getStopWords();
+        for (auto it = words.begin(); it != words.end(); ++it) {
+            auto uit = stopWords.find(*it);
+            if (uit != stopWords.end()) {
+                words.erase(it);
+            }
+        }
         return words;
     }
 

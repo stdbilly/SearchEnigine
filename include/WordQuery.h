@@ -18,8 +18,12 @@ class WordQuery {
 
     void loadLibrary();
     string doQuery(const string& str);
-    private:
+
+   private:
+    vector<double> getQueryWordsWeight(vector<string>& queryWords);
+    vector<int> getPages(vector<string> queryWords);
     string returnNoAnswer();
+    string createJson(vector<int>& docIdVec, const vector<string>& queryWords);
 
    private:
     WordSegmentation _jieba;
