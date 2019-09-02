@@ -15,9 +15,7 @@ class WebPage {
     WebPage(int id, const string& title, const string& link,
             const string& content);
 
-    WebPage() {
-        cout << "WebPage" << endl;
-    };
+    WebPage() {};
 
     int getDocId() { return _docid; }
     string getTitle() { return _title; }
@@ -27,7 +25,7 @@ class WebPage {
 
    private:
     size_t getBytes(const char ch);
-    string getNLenString(string& str, size_t pos, int len);
+    size_t length(const std::string &str);
 
    private:
     int _docid;

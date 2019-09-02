@@ -98,7 +98,7 @@ string WordQuery::doQuery(const string& str) {
     for (auto& item : queryWords) {
         auto it = _invertIndex.find(item);
         if (it == _invertIndex.end()) {
-            LogInfo("%s, not found", item);
+            LogInfo("%s not found", item.c_str());
             return returnNoAnswer();
         }
     }
@@ -192,8 +192,6 @@ string WordQuery::createJson(vector<int>& docIdVec,
         elem["summary"] = summary;
         elem["url"] = url;
         arr.append(elem);
-        if (++cnt == 100)  // 最多记录100条
-            break;
     }
 
     root["files"] = arr;

@@ -15,6 +15,7 @@ void PageLib::create() {
     reader.createXML();
 }
 
+#if 0
 void PageLib::store() {
     ofstream ofsPage(CONFIG[RIPEPAGE_PATH]);
     ofstream ofsOffset(CONFIG[OFFSET_PATH]);
@@ -29,5 +30,5 @@ void PageLib::store() {
     ofsPage.close();
     ofsOffset.close();
 }
-
+#endif
 }  // namespace wd

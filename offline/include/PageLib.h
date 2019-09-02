@@ -10,7 +10,7 @@ class PageLib {
    public:
     PageLib(DirScanner& scanner);
     void create();
-    void store();
+    //void store();
 
    private:
    DirScanner& _scanner;

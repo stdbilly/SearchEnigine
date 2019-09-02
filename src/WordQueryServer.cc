@@ -1,4 +1,5 @@
 #include "WordQueryServer.h"
+#include "mylogger.h"
 using std::to_string;
 using std::placeholders::_1;
 
@@ -18,7 +19,7 @@ void WordQueryServer::start() {
 }
 
 void WordQueryServer::onConnection(const TCPConnectionPtr& conn) {
-    cout << conn->toString() << " connected" << endl;
+    LogInfo("%s connected", conn->toString().c_str());
 }
 
 void WordQueryServer::onMessage(const TCPConnectionPtr& conn) {
@@ -26,13 +27,13 @@ void WordQueryServer::onMessage(const TCPConnectionPtr& conn) {
     if (msg.back() == '\n') {
         msg.erase(msg.size() - 1, 1);
     }
-    cout << ">> receive from client: " << msg << endl;
+    LogInfo("receive from client: %s",msg.c_str());
 
      _threadpool.addTask(std::bind(&WordQueryServer::process, this, conn, msg));
 }
 
 void WordQueryServer::onClose(const TCPConnectionPtr& conn) {
-    cout << ">> " << conn->toString() << " disconnected" << endl;
+    LogInfo("%s disconnected", conn->toString().c_str());
 }
 
 //运行在线程池的某一个线程

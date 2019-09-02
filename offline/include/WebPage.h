@@ -15,7 +15,7 @@ class WebPage {
     int getDocId() { return _docid; }
     uint64_t getSimhash() { return _simhashVal; }
     void insertDoc(XMLDocument& pageLib);
-    string getDoc();
+    //string getDoc();
     unordered_map<string, int>& getWordsMap() { return _wordsMap; }
 
     void generateSimhash(WordSegmentation& simhasher);

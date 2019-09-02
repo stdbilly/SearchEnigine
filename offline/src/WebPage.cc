@@ -57,6 +57,7 @@ void WebPage::insertDoc(XMLDocument& pageLib) {
     doc->InsertEndChild(content);
 }
 
+#if 0
 string WebPage::getDoc() {
     ostringstream oss;
     oss << "<doc>" << '\n'
@@ -67,6 +68,7 @@ string WebPage::getDoc() {
         << "</doc>" << '\n';
     return oss.str();
 }
+#endif
 
 bool WebPage::operator<(const WebPage& rhs) {
     return _simhashVal < rhs._simhashVal;

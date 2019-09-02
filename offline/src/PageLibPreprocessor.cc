@@ -110,21 +110,6 @@ void PageLibPreprocessor::buildInvertIndex() {
 }
 
 void PageLibPreprocessor::store() {
-    /* ofstream ofsPage(CONFIG[NEW_RIPEPAGE_PATH]);
-    ofstream ofsOffset(CONFIG[NEW_OFFSET_PATH]);
-
-    for (auto& page : _pageLib) {
-        int id = page.getDocId();
-        string temp = page.getDoc();
-        ofstream::pos_type offset = ofsPage.tellp();
-        size_t length = temp.size();
-        ofsPage << temp;
-        ofsOffset << id << '\t' << offset << '\t' << length << '\n';
-    }
-    cout << ">> store new ripepage and offset success" << endl;
-    ofsPage.close();
-    ofsOffset.close(); */
-
     string declaration = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
     XMLDocument xmlpages;
     xmlpages.Parse(declaration.c_str());
