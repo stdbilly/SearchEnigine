@@ -1,216 +1,921 @@
-2019-08-30 22:27:28,073 [INFO] start 10 [src/TestOnline.cc:main:8]
-2019-08-30 22:27:51,222 [INFO] start 10 [src/TestOnline.cc:main:8]
-2019-08-31 17:15:41,319 [DEBUG] load rigepage success, size = 12 [src/WordQuery.cc:loadLibrary:31]
-2019-08-31 17:19:52,329 [ERROR] tinyxml2 load file error [src/WordQuery.cc:loadLibrary:22]
-2019-08-31 17:21:34,752 [DEBUG] load rigepage success, size = 12 [src/WordQuery.cc:loadLibrary:38]
-2019-08-31 17:31:09,721 [DEBUG] load rigepage success, size = 12 [src/WordQuery.cc:loadLibrary:38]
-2019-08-31 17:31:11,001 [DEBUG] load rigepage success, size = 12 [src/WordQuery.cc:loadLibrary:38]
-2019-08-31 17:31:14,742 [DEBUG] load rigepage success, size = 12 [src/WordQuery.cc:loadLibrary:38]
-2019-08-31 17:31:16,799 [DEBUG] load rigepage success, size = 12 [src/WordQuery.cc:loadLibrary:38]
-2019-08-31 17:51:59,985 [DEBUG] load rigepage success, size = 12 [src/WordQuery.cc:loadLibrary:39]
-2019-08-31 20:32:57,797 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc:loadLibrary:32]
-2019-08-31 20:34:11,924 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc:loadLibrary:37]
-2019-08-31 20:35:33,221 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc:loadLibrary:37]
-2019-08-31 20:42:04,038 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-08-31 20:42:04,063 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc:loadLibrary:37]
-2019-08-31 21:09:04,347 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-08-31 21:09:04,373 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-08-31 21:09:04,525 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:61]
-2019-08-31 21:31:08,441 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-08-31 21:31:09,991 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:37]
-2019-08-31 21:31:10,144 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:58]
-2019-08-31 21:34:01,674 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-08-31 21:34:03,268 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:37]
-2019-08-31 21:34:03,432 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:58]
-2019-08-31 21:37:33,022 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-08-31 21:37:34,618 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:37]
-2019-08-31 21:37:34,806 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:58]
-2019-08-31 21:42:08,915 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-08-31 21:42:10,664 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:37]
-2019-08-31 21:42:10,854 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:58]
-2019-08-31 21:47:26,414 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-08-31 21:47:28,038 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:37]
-2019-08-31 21:47:28,205 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:58]
-2019-08-31 21:51:04,390 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-08-31 21:51:05,967 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:37]
-2019-08-31 21:51:06,124 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:58]
-2019-08-31 21:51:59,488 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-08-31 21:52:01,010 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:37]
-2019-08-31 21:52:01,171 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:58]
-2019-08-31 22:00:19,958 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-08-31 22:00:21,478 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:37]
-2019-08-31 22:00:21,632 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:58]
-2019-08-31 22:00:51,950 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-08-31 22:00:53,458 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:37]
-2019-08-31 22:00:53,610 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:58]
-2019-08-31 22:01:17,427 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-08-31 22:01:18,953 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:37]
-2019-08-31 22:01:19,111 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:58]
-2019-08-31 22:20:15,699 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-08-31 22:20:17,300 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:37]
-2019-08-31 22:20:17,461 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:58]
-2019-08-31 22:20:37,572 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-08-31 22:20:39,087 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-08-31 22:20:39,243 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:59]
-2019-08-31 22:20:40,885 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-08-31 22:20:41,056 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:59]
-2019-08-31 22:21:18,699 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-08-31 22:21:20,213 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-08-31 22:21:20,365 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:59]
-2019-08-31 22:24:52,263 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-08-31 22:24:53,876 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-08-31 22:24:54,052 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:59]
-2019-08-31 22:27:12,650 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-08-31 22:27:14,184 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-08-31 22:27:14,338 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:59]
-2019-08-31 22:31:08,893 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-08-31 22:31:10,458 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-08-31 22:31:10,613 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:59]
-2019-08-31 22:31:35,243 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-08-31 22:31:36,821 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-08-31 22:31:36,974 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:59]
-2019-09-01 10:35:15,494 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-09-01 10:35:17,160 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-09-01 10:35:17,335 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:59]
-2019-09-01 10:48:32,328 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-09-01 10:48:33,974 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-09-01 10:48:34,150 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:59]
-2019-09-01 10:57:51,340 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-09-01 10:57:52,973 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-09-01 10:57:53,147 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:59]
-2019-09-01 11:04:40,827 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-09-01 11:04:42,462 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-09-01 11:04:42,629 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:59]
-2019-09-01 11:18:31,999 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-09-01 11:18:33,596 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-09-01 11:18:33,755 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:59]
-2019-09-01 11:20:45,228 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-09-01 11:20:46,921 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-09-01 11:20:47,098 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:59]
-2019-09-01 11:33:16,319 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-09-01 11:33:18,061 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-09-01 11:33:18,237 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:59]
-2019-09-01 11:46:54,658 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-09-01 11:46:56,280 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-09-01 11:46:56,452 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:59]
-2019-09-01 11:54:42,363 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-09-01 11:54:44,001 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-09-01 11:54:44,175 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:59]
-2019-09-01 12:28:25,529 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-09-01 12:28:27,198 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-09-01 12:28:27,355 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:59]
-2019-09-01 14:20:49,771 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-09-01 14:20:51,409 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-09-01 14:20:51,566 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:59]
-2019-09-01 14:24:31,033 [DEBUG] read config file success [src/Configuration.cc:readFile:49]
-2019-09-01 14:24:32,597 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:38]
-2019-09-01 14:24:32,759 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:59]
-2019-09-01 19:42:04,755 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-01 19:42:06,303 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:67]
-2019-09-01 19:42:06,470 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:88]
-2019-09-01 19:44:17,601 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-01 19:44:19,177 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:67]
-2019-09-01 19:44:19,338 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:88]
-2019-09-01 19:46:37,780 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-01 19:46:39,317 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:67]
-2019-09-01 19:46:39,467 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:88]
-2019-09-01 21:25:17,245 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-01 21:25:18,806 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-01 21:25:18,959 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-01 21:29:47,502 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-01 21:29:49,088 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-01 21:29:49,247 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 10:25:35,819 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 10:25:37,339 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 10:25:37,495 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 10:29:54,367 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 10:29:56,081 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 10:29:56,299 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 10:31:00,826 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 10:31:02,527 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 10:31:02,709 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 10:31:16,516 [INFO] OZ�U, not found [src/WordQuery.cc : doQuery:101]
-2019-09-02 10:44:23,107 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 10:44:24,847 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 10:44:25,120 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 10:55:13,816 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 10:55:15,573 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 10:55:15,778 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 10:56:51,733 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 10:56:53,245 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 10:56:53,397 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 11:25:28,516 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 11:25:30,234 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 11:25:30,439 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 11:27:04,440 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 11:27:06,266 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 11:27:06,470 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 11:27:44,962 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 11:27:46,497 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 11:27:46,656 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 11:30:24,032 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 11:30:25,773 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 11:30:25,937 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 11:32:18,897 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 11:32:20,580 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 11:32:20,759 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 11:34:27,358 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 11:34:29,003 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 11:34:29,179 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 11:39:01,490 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 11:39:03,246 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 11:39:03,447 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 11:40:21,081 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 11:40:22,823 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 11:40:23,028 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 11:41:17,973 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 11:41:19,683 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 11:41:19,897 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 11:42:02,278 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 11:42:04,054 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 11:42:04,312 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 16:23:22,262 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 16:23:24,039 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 16:23:24,211 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 16:27:46,704 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 16:27:48,310 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 16:27:48,470 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 16:30:39,592 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 16:30:41,348 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 16:30:41,517 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 16:37:32,178 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 16:37:33,813 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 16:37:33,993 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 16:38:58,773 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 16:39:00,473 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 16:39:00,634 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 16:42:22,747 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 16:42:24,460 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 16:42:24,626 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 16:44:00,208 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 16:44:01,973 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 16:44:02,155 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 16:46:55,509 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 16:46:57,086 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 16:46:57,257 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 16:48:37,688 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 16:48:39,450 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 16:48:39,652 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 16:52:20,504 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 16:52:22,161 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 16:52:22,333 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 17:06:46,283 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 17:06:47,823 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 17:06:47,991 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 17:11:06,097 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 17:11:07,865 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 17:11:08,076 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 17:11:09,711 [INFO] 127.0.0.1:5080 --> 127.0.0.1:5080 connected [src/WordQueryServer.cc : onConnection:22]
-2019-09-02 17:11:34,964 [INFO] 127.0.0.1:5080 --> 127.0.0.1:5080 connected [src/WordQueryServer.cc : onConnection:22]
-2019-09-02 17:11:34,965 [INFO] dsgshkgfdhfdhlsd, not found [src/WordQuery.cc : doQuery:101]
-2019-09-02 17:14:54,570 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
-2019-09-02 17:14:56,266 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:68]
-2019-09-02 17:14:56,429 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:89]
-2019-09-02 17:15:04,811 [INFO] 127.0.0.1:5080 --> 127.0.0.1:5080 connected [src/WordQueryServer.cc : onConnection:22]
-2019-09-02 17:15:04,811 [INFO] receive from client: 视频 [src/WordQueryServer.cc : onMessage:30]
-2019-09-02 17:15:04,819 [INFO] 127.0.0.1:5080 --> 127.0.0.1:5080 disconnected [src/WordQueryServer.cc : onClose:36]
+2019-09-02 20:42:11,149 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
+2019-09-02 20:42:12,672 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:72]
+2019-09-02 20:42:12,823 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:93]
+2019-09-02 20:42:12,824 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:42:12,824 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:42:12,824 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:42:12,824 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:42:12,824 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:42:12,824 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:42:12,824 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:42:12,824 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:42:12,824 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:42:12,824 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:42:56,559 [INFO] 127.0.0.1:5080 --> 127.0.0.1:5080 connected [src/WordQueryServer.cc : onConnection:22]
+2019-09-02 20:42:56,559 [INFO] receive from client: 腾讯 [src/WordQueryServer.cc : onMessage:30]
+2019-09-02 20:42:56,559 [DEBUG] Succeed to execute command: GET 腾讯 [include/Redis.h : get:36]
+2019-09-02 20:42:56,559 [ERROR] Error:  [include/Redis.h : get:39]
+2019-09-02 20:42:56,559 [DEBUG] cache miss, query invert index [src/WordQuery.cc : doQuery:104]
+2019-09-02 20:42:56,562 [DEBUG] Succeed to execute command: SET 腾讯 {
+   "files" : [
+      {
+         "summary" : "开发工具、UI框架也都是腾讯做的，过去Web上的三方工具、框架生态，完全没有用。...\n顺便也澄清一个误区，小程序和腾讯X5引擎也没关系。X5是QQ浏览器团队的，是基于HTML的，但小程序是微信团队自研的。...\n",
+         "title" : "微信小程序，大多数人都搞错的八个问题",
+         "url" : "http://www.iteye.com/news/31864"
+      },
+      {
+         "summary" : "为确保微信小程序平台、微信公众平台、其他用户等各方的安全、稳定及良好的用户体验，腾讯将对需要发布的小程序进行发布审核。...\n“发布审核”是指由用户发起，将其完成初始化开发的小程序提交至腾讯，由腾讯自行或委托第三方对该小程序的合法性、合理性、安全性、稳定性、可操作性、用户体验等各方面，采用包括但不限于开发信息核对、安全测试、UI测试、随机测试、动态测试、安全测试等方式，进行审查、甄别、试验与评估的过...\n",
+         "title" : "详解微信小程序开发教程",
+         "url" : "http://www.iteye.com/news/31862"
+      },
+      {
+         "summary" : "假设我是腾讯新闻的...\n腾讯微博,...\n",
+         "title" : "被 ｢阉割｣ 的分享与应用间的墙",
+         "url" : "http://www.phonekr.com/android-share-in-mainland-china/"
+      },
+      {
+         "summary" : "腾讯终于扭扭捏捏地把微信改成了靠近...\n不认为腾讯因为...\n",
+         "title" : "｢数据? 那是什么? 能吃么? 好吃么?｣",
+         "url" : "http://www.phonekr.com/do-not-get-tricked-by-data/"
+      },
+      {
+         "summary" : "继「神海」系列总监跳槽腾讯旗下工作室之后，该游戏编剧和创意总监...\n",
+         "title" : "异闻录 20：我们中出了个叛徒",
+         "url" : "http://www.phonekr.com/tensei-20/"
+      },
+      {
+         "summary" : "腾讯与央行联合推出首个金融教育微信小游戏腾讯公司与中国人民银行金融消费权益保护局联合推出的首个金融教育微信小游戏《钱袋子保卫战》正式上...\nQQ发布新版本8.1.3，上线“一起听歌”、“16人视频通话”等功能腾讯QQ发布安卓8.1.3版本，新增一起听歌、16人视频通话、打卡相机、视频浮窗、消息朗读、群友卡片等新功...\n",
+         "title" : "氪星晚报 | 法拉第未来CEO贾跃亭拟将辞职​；Costco上海卖场限流2000人；魅族发布16s Pro手机和高级阳伞",
+         "url" : "http://36kr.com/p/5240461.html?ktm_source=feed"
+      },
+      {
+         "summary" : "（腾讯科技）拜腾M-Byte量产车型将于9月10日亮相，预计年底投产拜腾官方透露，旗下拜腾M-Byte量产车型将亮相于9月10日开幕的2019法兰克福车...\n",
+         "title" : "卡门简报 | 贾跃亭或辞任法拉第未来CEO；国产版Model 3将亮相",
+         "url" : "http://36kr.com/p/5240488.html?ktm_source=feed"
+      },
+      {
+         "summary" : "门户时代BAT（百度、阿里、腾讯）只是互联网时代的说法，并非代表全部互联网企业的成功模...\n",
+         "title" : "从BAT到TMD，下一个10年属于ABCD",
+         "url" : "http://36kr.com/p/5240415.html?ktm_source=feed"
+      },
+      {
+         "summary" : "Summit，简称CSS)召开前，主办方联合腾讯研究院《腾云》期刊组织了一场关于互联网安全的沙龙，邀请了行业知名专家学者、一线安全工程师，为本届CSS安全峰会做了统筹思想、主题定调的会前准...\n在腾讯平台上，分分秒秒发生着交往、交易，这些传播行为是大数据基础基于十亿、数十亿人口的实时、整体、融合、演进、连接一切的网络环境和态...\n",
+         "title" : "段永朝为CSS安全峰会破题：连接赋能 安全升维",
+         "url" : "http://www.leiphone.com/news/201610/yZqgKlrzvU4Eeng3.html"
+      },
+      {
+         "summary" : "不惮说出腾讯本质上是一个游戏公司的事实。所以他们选择了受众同样广泛的教育，同时，在体验方面，严格围绕微信原生的交互做文章。“如果要加载很多页面，速度会非常慢。Yoli...\n",
+         "title" : "Yoli口语：一个美国人的微信生意",
+         "url" : "http://www.leiphone.com/news/201610/ZrLUUomU67afORa9.html"
+      },
+      {
+         "summary" : "峰会召开前夕，主办方于10月10日联合腾讯研究院《腾云》期刊在北京举办了一场关于互联网安全的沙...\n预计今年CSS安全峰会将有近万人次参与，全球范围的与会企业将突破500家，包括苹果、微软、高通、谷歌、思科、英特尔、McAfee等国际顶尖企业将会派出重量级嘉宾参会，他们将与腾讯、百度、京东等中国领袖企业的顶级专家在此基础上，深入探讨如何加速构建安全生态，让安全生态持续生长、智慧生...\n",
+         "title" : "潘柱廷：循互联网安全之路，助力CSS峰会连接赋能",
+         "url" : "http://www.leiphone.com/news/201610/LCOD9ZUUtPeBoCJa.html"
+      },
+      {
+         "summary" : "群主可开启进群确认腾讯科技10月25日，微信发布新版本，在最新版本6.3.28中，对群功能进行了两项功能升...\n",
+         "title" : "销售疲软？苹果十五年来首次营收下滑； 微信群新功能：群聊能收钱、进群需确认 | 雷锋早报",
+         "url" : "http://www.leiphone.com/news/201610/ahPH5CNQxCWDUubJ.html"
+      },
+      {
+         "summary" : "妈妈的手机→基站→千里之外腾讯服务器→基站→我手机→蓝牙到手表的...\n",
+         "title" : "麦步智能手表试用体验：超长待机是硬道理，开放平台是未来",
+         "url" : "https://xbeta.info/maibu-watch.htm"
+      },
+      {
+         "summary" : "我现在如需发布，是操作录屏则发B站（低码率而清晰，真正高效环保）；拍摄的视频则直接iPhone录制，用优酷/腾讯等视频客户端直接上传。...\n",
+         "title" : "【转载+补充】最强免费萤幕录影软体 ActivePresenter 教学影片神器",
+         "url" : "https://xbeta.info/activepresenter.htm"
+      },
+      {
+         "summary" : "5月，腾讯微云宣布关闭文件中转站功能。...\n一方面的确是为了配合打击网络色情与盗版，但这样简单粗...\n",
+         "title" : "云盘关停背后：摆上台面的都是借口 真相只有一个",
+         "url" : "http://www.techweb.com.cn/irouter/2016-10-26/2420443.shtml"
+      },
+      {
+         "summary" : "从这点上，微博似乎有了BAT的影子，从腾讯开始，中国互联网三巨头近几年的打法几乎都是只投资而不控股，强调布...\n",
+         "title" : "微博炫出2016年的数据，感觉金光四射",
+         "url" : "http://36kr.com/p/5055182.html?ktm_source=feed"
+      },
+      {
+         "summary" : "服务的是腾讯、完美世界这样的客户，但由于传播的主阵地在微博这样的社交平台上，客户的需求点在于用户的反馈，而转过来做内容后，这种用户为先的思路其实是一脉相承的，过去在传播领域的经验也在扩大内容影响力方面起到了作...\n",
+         "title" : "传统妖怪故事怎么在当代成为爆款？非人哉除了搞笑日常，还加了点“性冷淡”色彩",
+         "url" : "http://36kr.com/p/5055144.html?ktm_source=feed"
+      },
+      {
+         "summary" : "亿美元。除此之外，像与腾讯等转播分销合同，各个国家、地区的区域赞助合作的签订，以及...\n",
+         "title" : "新赛季大戏揭幕，从这五个趋势读懂80亿美元的NBA商业新世界",
+         "url" : "http://36kr.com/p/5055166.html?ktm_source=feed"
+      },
+      {
+         "summary" : "百度、腾讯、阿里巴巴当时都知道分类信息可能是一个很大的市场，但这些巨头也知道这个市场要起来可能需要经过10年或8年，需要去教育市场，可能还会面临亏...\n",
+         "title" : "姚劲波：创业永远要做未来的事情，不要嫌早",
+         "url" : "http://36kr.com/p/5055180.html?ktm_source=feed"
+      },
+      {
+         "summary" : "小米、腾讯、华为等智能硬件和互联网企业纷纷想进入无人机市场分一杯羹，张庆旗认为相比这些企业星图是有先发优势...\n",
+         "title" : "消费级航拍无人机热潮继续，星图智控获得7200万元B轮融资",
+         "url" : "http://36kr.com/p/5055168.html?ktm_source=feed"
+      },
+      {
+         "summary" : "会上，阿里巴巴、腾讯、京东、58同城、滴滴快滴、百度、奇虎360、顺丰速运等国内主要企业代表共同签订了反“炒信”信息共享协...\n",
+         "title" : "【大公司晚报】亚马逊微型无人机专利曝光；微博自媒体年入超百亿",
+         "url" : "http://36kr.com/p/5055172.html?ktm_source=feed"
+      },
+      {
+         "summary" : "那时，腾讯、阿里、百度完成第二轮融资，背后全是海外投资机构；红杉、经纬等海外VC尚未进入中国，除了少量先行者外，本土机构更是寥寥无...\n他在接受腾讯采访时表示印尼的风投价格要低很多：A轮价格在100万-200万美元之间，大概可以占股15-25%，而天使轮则只有10多万美...\n",
+         "title" : "泳帽、摩托车和热钱，中国创投圈在印尼的真实故事 | 36氪特稿",
+         "url" : "http://36kr.com/p/5055135.html?ktm_source=feed"
+      },
+      {
+         "summary" : "粉丝好感度（推荐度）最高的TOP3除上述提到的《识汝不识丁》之外，还有青春题材的《一起同过窗》，腾讯视频热播剧，粉丝推荐度87.00，粉丝推荐单榜第一名，以清新自然的风格和精良的制作取得不错的口碑，但演员选择并非强势吸粉的类型，整体粉丝指数不占优势；《画江湖之不良人》，爱奇艺热推剧，同名的国产武侠动画连续剧同期热播，IP多元化精品网剧代表作，粉丝推荐度82.90...\n",
+         "title" : "粉丝经济新浪潮：谁在潮头？谁的粉丝最“壕”？",
+         "url" : "http://36kr.com/p/5055120.html?ktm_source=feed"
+      },
+      {
+         "summary" : "Leap，该公司据称也在致力于眼动交互技术。附上一张图展示下谷歌在VR的布局：图片源于腾讯科技相关报道：把眼睛转化为鼠标，Eyefluence...\n",
+         "title" : "谷歌收购眼动追踪技术公司Eyefluence，VR布局再下一城",
+         "url" : "http://36kr.com/p/5055104.html?ktm_source=feed"
+      },
+      {
+         "summary" : "的电脑桌面版客户端，方便使用电脑键盘替代手机快速输入聊天。于是腾讯推出了微信的网页版，用户可以在浏览器上收发信息。...\n不过人们对微信电脑版桌面客户端的呼声依然很高，在腾讯推出了...\n",
+         "title" : "[来自异次元] 微信电脑版下载 - 官方PC版 Windows / Mac 桌面客户端，像QQ一样聊微信！",
+         "url" : "http://www.iplaysoft.com/weixin.html"
+      },
+      {
+         "summary" : "2.0，但是并不好，因为大多数网关代理会把整个URI请求记到日志中。我们只要脑补一下腾讯的网关的Access...\n",
+         "title" : "HTTP API 认证授权术",
+         "url" : "https://coolshell.cn/articles/19395.html"
+      }
+   ]
+}
+ [include/Redis.h : set:49]
+2019-09-02 20:42:56,563 [INFO] 127.0.0.1:5080 --> 127.0.0.1:5080 disconnected [src/WordQueryServer.cc : onClose:36]
+2019-09-02 20:43:13,379 [INFO] 127.0.0.1:5080 --> 127.0.0.1:5080 connected [src/WordQueryServer.cc : onConnection:22]
+2019-09-02 20:43:13,379 [INFO] receive from client: 深圳 [src/WordQueryServer.cc : onMessage:30]
+2019-09-02 20:43:13,380 [DEBUG] Succeed to execute command: GET 深圳 [include/Redis.h : get:36]
+2019-09-02 20:43:13,380 [ERROR] Error:  [include/Redis.h : get:39]
+2019-09-02 20:43:13,380 [DEBUG] cache miss, query invert index [src/WordQuery.cc : doQuery:104]
+2019-09-02 20:43:13,382 [DEBUG] Succeed to execute command: SET 深圳 {
+   "files" : [
+      {
+         "summary" : "目前，中国有八个城市实行汽车限购，分别是北京、上海、深圳、广州、杭州、天津、贵阳、石家...\n",
+         "title" : "深度资讯 | 20条消费刺激措施出炉，将如何影响你的生活？",
+         "url" : "http://36kr.com/p/5240468.html?ktm_source=feed"
+      },
+      {
+         "summary" : "“吉兰丁”宣布完成千万级别Pre-A轮融资36氪获悉，近日，深圳吉兰丁智能科技有限公司宣布完成千万级别Pre-A轮融资，由高捷资本独家投...\n",
+         "title" : "氪星晚报 | 法拉第未来CEO贾跃亭拟将辞职​；Costco上海卖场限流2000人；魅族发布16s Pro手机和高级阳伞",
+         "url" : "http://36kr.com/p/5240461.html?ktm_source=feed"
+      },
+      {
+         "summary" : "三天三夜的时间，我们几乎品尝了大半个中国的啤酒，穿越了无数山川和村庄，来到深...\n",
+         "title" : "黑客老王：一个人的黑客史",
+         "url" : "http://www.leiphone.com/news/201609/8tAqjCJ79h7A6pHx.html"
+      },
+      {
+         "summary" : "“VR、AR到底能给客户、用户带来什么样的价值？”在我和深圳一家做一体机的厂商聊天的时候，这位创始人不断地在进行这样的反...\n",
+         "title" : "霜降了，来说说虚拟现实行业的G点在哪里？",
+         "url" : "http://36kr.com/p/5055226.html?ktm_source=feed"
+      },
+      {
+         "summary" : "美丽策全称为深圳美丽策科技有限公司，注册于2016年1月，前身为深圳斯坦普光生物科技有限公司，是一家集软件、硬件、光生物美容、互联网和大数据于一体的源生态全产业链高科技型企...\n",
+         "title" : "美丽策发布家用美容仪智美光膜，想让医疗级光子嫩肤进入全民时代",
+         "url" : "http://36kr.com/p/5055188.html?ktm_source=feed"
+      },
+      {
+         "summary" : "但是随着十月来各大城市对私人小汽车合乘实施意见的公布内容来看，除了杭州、深圳等极少数城市以外，各地方政府的举措大都是属于“口惠而实不至...\n本建议修改意见的参与人（按姓氏拼音序排列）：傅蔚冈&nbsp;&nbsp;上海金融与法律研究院研究员顾大松&nbsp;&nbsp;东南大学交通法治研究中心执行主任、副教授金自宁&nbsp;&nbsp;北京大学深圳研究生院副教授刘远举&nbsp;&nbsp;自由撰稿...\n",
+         "title" : "在专家学者眼里，该如何\"鼓励和规范\"私人小客车合乘?",
+         "url" : "http://36kr.com/p/5055174.html?ktm_source=feed"
+      },
+      {
+         "summary" : "70人，市场40人左右。总部上海，在深圳设有销售和工厂团队，在北京、南京、合肥设立销售分公司。CEO...\n",
+         "title" : "餐饮业已有对手3000，“来客”举着“高可配置”的大旗进场厮杀",
+         "url" : "http://36kr.com/p/5055128.html?ktm_source=feed"
+      },
+      {
+         "summary" : "今日（10月25日）晚间，因构成关联交易，A股上市公司国盛金控发布公告表示，其旗下全资子公司深圳华声前海投资有限公司拟购买北京凤凰祥瑞互联投资基金（有限合伙）持有的北京快乐时代科技发展有限公司（即趣店）5%股...\n",
+         "title" : "趣分期财务数据曝光：2015年亏5.4亿，2016年7个月赚1.57亿",
+         "url" : "http://36kr.com/p/5055155.html?ktm_source=feed"
+      },
+      {
+         "summary" : "据新京报报道，花旗银行在今年年初相继关闭了三家中国分行，包括深圳前海支行、北京望京支行和大连星海湾支...\n与发达国家不同，花旗的报告认为，中国银行业的变革主要由新进玩家在引领，而非传统的银行自行变革，比如深圳前海微众银行、浙江网商银行两家纯互联网银行，完全没有物理网点，都是由互联网公司创...\n",
+         "title" : "全球零售银行业大幅裁员撤店，科技金融有何机会？",
+         "url" : "http://36kr.com/p/5055138.html?ktm_source=feed"
+      },
+      {
+         "summary" : "百度地图表示，首批加入的鹰眼硬件联盟的企业包括台湾联发科技（MTK）、北京聚利科技、深圳微科通讯、深圳博实结及深圳成为科技智能交通系统有限公司...\n",
+         "title" : "百度鹰眼上线一周年终端总数量超1000万，台湾联发科技加入百度鹰眼硬件联盟",
+         "url" : "http://36kr.com/p/5055145.html?ktm_source=feed"
+      }
+   ]
+}
+ [include/Redis.h : set:49]
+2019-09-02 20:43:13,382 [INFO] 127.0.0.1:5080 --> 127.0.0.1:5080 disconnected [src/WordQueryServer.cc : onClose:36]
+2019-09-02 20:43:59,061 [INFO] 127.0.0.1:5080 --> 127.0.0.1:5080 connected [src/WordQueryServer.cc : onConnection:22]
+2019-09-02 20:43:59,061 [INFO] receive from client: 中国 [src/WordQueryServer.cc : onMessage:30]
+2019-09-02 20:43:59,061 [DEBUG] Succeed to execute command: GET 中国 [include/Redis.h : get:36]
+2019-09-02 20:43:59,061 [ERROR] Error:  [include/Redis.h : get:39]
+2019-09-02 20:43:59,062 [DEBUG] cache miss, query invert index [src/WordQuery.cc : doQuery:104]
+2019-09-02 20:43:59,071 [DEBUG] Succeed to execute command: SET 中国 {
+   "files" : [
+      {
+         "summary" : "2016中国软件开发者大会将在北京举行，大会面向国内外的中高端技术人员，聚焦最前沿技术及一线的实践经验，从而助力企业的技术升级和改造、全面提升技术人员的综合实力。...\n",
+         "title" : "Erlang之父Joe Armstrong确认将参加中国软件开发者大会",
+         "url" : "http://www.iteye.com/news/31904"
+      },
+      {
+         "summary" : "关注Kylin项目很久了，也见证了第一个由中国团队完整贡献到Apache的顶级项...\n",
+         "title" : "【知识库专访】蒋守壮：Hive性能优化实战分享",
+         "url" : "http://www.iteye.com/news/31896"
+      },
+      {
+         "summary" : "本文来自：开源中国...\n",
+         "title" : "阿里云开放AliSQL数据库源码下载",
+         "url" : "http://www.iteye.com/news/31882"
+      },
+      {
+         "summary" : "来自：开源中国...\n",
+         "title" : "Spark 2.0 时代全面到来 —— 2.0.1 版本发布",
+         "url" : "http://www.iteye.com/news/31875"
+      },
+      {
+         "summary" : "必须声明这个榜单本身采集的是英文世界的数据，虽然在反映趋势上有一些参考意义，但与中国的实际情况不完全符合，而且，这张采样本身也有相当大的局限性。...\n",
+         "title" : "TIOBE 2016年10月编程语言排行榜：Go语言将问鼎2016年度编程语言宝座？",
+         "url" : "http://www.iteye.com/news/31872"
+      },
+      {
+         "summary" : "这再次证明一点，微信想让什么火，真的就能让什么火。这种能力真是全中国再也没有人有了，政府也没有。...\n但也确实存在一个问题，Apple是极其封闭的，在Apple上二级生态想做很大是非...\n",
+         "title" : "微信小程序，大多数人都搞错的八个问题",
+         "url" : "http://www.iteye.com/news/31864"
+      },
+      {
+         "summary" : "哔哩哔哩动画是中国大陆的一家弹幕视频网站，在中国二次元用户中颇受欢迎。...\n",
+         "title" : "Material Design in Action — 哔哩哔哩动画 Android 客户端",
+         "url" : "http://www.phonekr.com/bilibili-for-android-redesign/"
+      },
+      {
+         "summary" : "(在中国其实是今天),...\n",
+         "title" : "思源黑体, 一款好用的开源中文字体",
+         "url" : "http://www.phonekr.com/source-han-sans/"
+      },
+      {
+         "summary" : "China(中国空气质量) (by...\n",
+         "title" : "团队成员的 Android 实用美观小工具推荐(不定期更新)",
+         "url" : "http://www.phonekr.com/android-niceties/"
+      },
+      {
+         "summary" : "作为中国...\n小米平板能为颓靡的中国...\n",
+         "title" : "小米平板的变数",
+         "url" : "http://www.phonekr.com/mipad/"
+      },
+      {
+         "summary" : "小米以硬件来扩大利润､ 增强用户粘性并且进一步变革中国...\n能符合流畅运行小米系统条件的设备以及上文提到的国行/中国运营商定制手机的用户,...\n",
+         "title" : "小米移动的三驾马车",
+         "url" : "http://www.phonekr.com/mi-troika/"
+      },
+      {
+         "summary" : "正在中国进行访问的澳大利亚总理阿博特表示「非常确信」最近捕获的信号来自于...\n",
+         "title" : "异闻录 21：高难度暴力杀人事件",
+         "url" : "http://www.phonekr.com/tensei-21/"
+      },
+      {
+         "summary" : "而自从去年六月回到中国之后行踪就飘忽不定,...\n",
+         "title" : "关于未来, 以及一些才不是怎么样都好呢的事情…",
+         "url" : "http://www.phonekr.com/about-my-near-future/"
+      },
+      {
+         "summary" : "中国比特币交易平台...\n与此同时，随菲律宾海军的各国记者终于因为无法承担中国移动高昂的漫游费而最终宣布退出仁爱礁抢滩报道活动。...\n",
+         "title" : "异闻录 20：我们中出了个叛徒",
+         "url" : "http://www.phonekr.com/tensei-20/"
+      },
+      {
+         "summary" : "日，克里发动对古巴报复式空袭，作为回应，俄罗斯驻军进入乌克兰，欧盟召开紧急会以，宣布对俄制裁，中国呼吁各国保持冷静。...\n月，美军占领古巴，俄罗斯攻陷乌克兰全境，两国在北京举行了亲切友好的会面，宣布和中国共同构建三国同盟维持世界和平，同年，欧盟彻底解体。...\n",
+         "title" : "异闻录 19：总统，药不能停",
+         "url" : "http://www.phonekr.com/tensei-19/"
+      },
+      {
+         "summary" : "1，中国男人...\n",
+         "title" : "异闻录 18：猴族危机",
+         "url" : "http://www.phonekr.com/tensei-18/"
+      },
+      {
+         "summary" : "是一家总部位于新加坡的社交媒体公司，今年3月，中国直播社交平台公司YY（欢聚时代）宣布完成对其的全资收购，交易总金额约为14.5亿美元。此外，BIGO...\n将为中国大陆以外的...\n",
+         "title" : "出海日报 | Grab宣布将在越南投资5亿美元；Paytm为扩大用户群体关注医疗保健支付领域",
+         "url" : "http://36kr.com/p/5240499.html?ktm_source=feed"
+      },
+      {
+         "summary" : "目前，中国有八个城市实行汽车限购，分别是北京、上海、深圳、广州、杭州、天津、贵阳、石家...\n",
+         "title" : "深度资讯 | 20条消费刺激措施出炉，将如何影响你的生活？",
+         "url" : "http://36kr.com/p/5240468.html?ktm_source=feed"
+      },
+      {
+         "summary" : "腾讯与央行联合推出首个金融教育微信小游戏腾讯公司与中国人民银行金融消费权益保护局联合推出的首个金融教育微信小游戏《钱袋子保卫战》正式上...\n（证券时报）2023年中国AI基础架构市场将超过80亿美金IDC、浪潮公布《2019-2020中国人工智能计算力发展评估报告》，报告预计2023年，中国人工智能基础架构市场将超过80亿美金，未来五年年复合增⻓率达到33.8%，增速是中国整体基础架构市场的三倍以...\n",
+         "title" : "氪星晚报 | 法拉第未来CEO贾跃亭拟将辞职​；Costco上海卖场限流2000人；魅族发布16s Pro手机和高级阳伞",
+         "url" : "http://36kr.com/p/5240461.html?ktm_source=feed"
+      },
+      {
+         "summary" : "（国际金融报）福特推出国内合资品牌首款纯电SUV近日，福特宣布其为中国市场打造的纯电紧凑型SUV福特领界EV正式上...\n3据Electrek报道，特斯拉CEO马斯克将在本周晚些时间前往上海，有传闻称他将在8月29日的世界人工智能大会上推出首款中国制造的特斯拉Model...\n",
+         "title" : "卡门简报 | 贾跃亭或辞任法拉第未来CEO；国产版Model 3将亮相",
+         "url" : "http://36kr.com/p/5240488.html?ktm_source=feed"
+      },
+      {
+         "summary" : "1999年，李彦宏携搜索引擎专利技术从美国回到中国，并在次年1月正式成立了百度公...\n以后10年，双11将成为中国最大的购物...\n",
+         "title" : "从BAT到TMD，下一个10年属于ABCD",
+         "url" : "http://36kr.com/p/5240415.html?ktm_source=feed"
+      },
+      {
+         "summary" : "年上半年中国公民出境旅游人数达...\n4.3％。中国已经成为泰国、日本、韩国、越南、俄罗斯、朝鲜、马尔代夫、英国等国的第一大入境旅游客源地。...\n",
+         "title" : "为了让你在国外花钱更方便，这些公司也是拼了",
+         "url" : "http://www.ifanr.com/737392?utm_source=rss&utm_medium=rss&utm_campaign="
+      },
+      {
+         "summary" : "在华业务的滴滴出行也不满足于中国市场，开始思考扩张全球业务。...\n大会上，滴滴出行总裁柳青高调宣布公司将向中国以外的市场扩张，夺取全球份额。美国这块沃土当然也在滴滴考虑范围内。...\n",
+         "title" : "“美国滴滴”Lyft CEO 否认公司在售，但靠“补贴大法”还可以撑多久？",
+         "url" : "http://www.ifanr.com/737357?utm_source=rss&utm_medium=rss&utm_campaign="
+      },
+      {
+         "summary" : "全球科技大会表示，滴滴将向中国以外的市场扩张，夺取全球份额。在此过程中，滴滴有可能与一些国家的当地专车服务展开合作。...\n中国合并后不久，就投资了东南亚地区最大出行软件...\n",
+         "title" : "柳青说滴滴要展开国际化扩张，但这是一件不容易的事",
+         "url" : "http://www.ifanr.com/737354?utm_source=rss&utm_medium=rss&utm_campaign="
+      },
+      {
+         "summary" : "包的棉花从美国的德克萨斯州运到中国的青岛。...\n",
+         "title" : "为了运送 88 包棉花，这两家银行用上了区块链和物联网",
+         "url" : "http://www.ifanr.com/736607?utm_source=rss&utm_medium=rss&utm_campaign="
+      },
+      {
+         "summary" : "创业可能和中国的很多偏交易型的创业（...\n年上半年中国大约有...\n",
+         "title" : "CNCC 2016 | 出门问问李志飞：AI 创业路上的那些坑和机遇",
+         "url" : "http://www.leiphone.com/news/201610/WWKIbKzUk4Gh2J4i.html"
+      },
+      {
+         "summary" : "年历史，是中国顶尖团队，最好的成绩是...\n而雷锋网所了解的另外两支中国队伍，就没有同济这么多队员和系统化的组织结...\n",
+         "title" : "WRC 2016｜这次RoboCup机器人足球比赛，中外团队差距在哪儿？",
+         "url" : "http://www.leiphone.com/news/201610/U3li2miRcufWbrE6.html"
+      },
+      {
+         "summary" : "10月10日，在第二届中国互联网安全领袖峰会(Cyber...\n段永朝是互联网与新技术力量的资深研究者，曾出席第一届中国互联网安全领袖峰会，并对今年大会主题有着独到见...\n",
+         "title" : "段永朝为CSS安全峰会破题：连接赋能 安全升维",
+         "url" : "http://www.leiphone.com/news/201610/yZqgKlrzvU4Eeng3.html"
+      },
+      {
+         "summary" : "第一次来中国，当时的北京还没有三环，一眼望去，路面上全是自行车。如今，James...\n俨然是中国通，能听出别人的南方口音，也能在被问及“为什么把精力从...\n",
+         "title" : "Yoli口语：一个美国人的微信生意",
+         "url" : "http://www.leiphone.com/news/201610/ZrLUUomU67afORa9.html"
+      },
+      {
+         "summary" : "2016第二届中国互联网安全领袖峰会(Cyber...\n作为大数据专家委员会副秘书长、中国人民银行信息安全顾问，潘柱廷对互联网信息安全前沿技术具有敏锐的把...\n",
+         "title" : "潘柱廷：循互联网安全之路，助力CSS峰会连接赋能",
+         "url" : "http://www.leiphone.com/news/201610/LCOD9ZUUtPeBoCJa.html"
+      },
+      {
+         "summary" : "Via&nbsp;Cryptocoinsnews推荐阅读：登上毕马威“2016全球FinTech100强”榜�...\n",
+         "title" : "韩国大力度拥抱数字货币，拨款 26 亿美元支持区块链 ",
+         "url" : "http://www.leiphone.com/news/201610/Eg7xUHYKXJv4blKz.html"
+      },
+      {
+         "summary" : "三天三夜的时间，我们几乎品尝了大半个中国的啤酒，穿越了无数山川和村庄，来到深...\n年华为中研部素未谋面的老伙计们，还记得《东方故事II》里原名“小李飞刀”，后来拜入少林被强制改名为“渡小”的那个家伙吗？）更重要的是，我第一次看到了&nbsp;Coolfire——那个曾经启迪了无数第一代中国黑客的台湾黑客教父——写的文...\n",
+         "title" : "黑客老王：一个人的黑客史",
+         "url" : "http://www.leiphone.com/news/201609/8tAqjCJ79h7A6pHx.html"
+      },
+      {
+         "summary" : "现在，Movidius又与中国安防摄像头制造商海康威视（Hikvision）达成了合...\n",
+         "title" : "销售疲软？苹果十五年来首次营收下滑； 微信群新功能：群聊能收钱、进群需确认 | 雷锋早报",
+         "url" : "http://www.leiphone.com/news/201610/ahPH5CNQxCWDUubJ.html"
+      },
+      {
+         "summary" : "许多中国网友视之为抹黑和挑衅，因此非常愤...\n中国观众与澳大利亚、美国的观众可能因为不同的社会规范而对荣誉有不同的认识或看法，这也是可以理解...\n",
+         "title" : "体育竞赛的光荣与荣誉",
+         "url" : "http://blog.sina.com.cn/s/blog_4cacf1f30102wlii.html"
+      },
+      {
+         "summary" : "大概没有人否认今天中国社会存在大量的“犬儒主义”者，而杨绛去世所引发的知识分子“沉默权”讨论也一石掀起千层浪。如何看待这些问题，以及今天中国知识分子生存现状，前海传媒日前专访了徐贲。...\n说谎：从您的观察来看，中国�...\n",
+         "title" : "犬儒主义是弱者的抵抗&nbsp;知识分子失败是全社会的不幸",
+         "url" : "http://blog.sina.com.cn/s/blog_4cacf1f30102we7n.html"
+      },
+      {
+         "summary" : "例如，海外华人认同中国文化，但并不自然而然就是中国的国...\n今天，许多中国人强烈要求政治改革，最初起因正是由于强烈不满现实政治的腐败以及腐败对整体国民道德的败坏和毒...\n",
+         "title" : "专制教育生产虚伪和功利的奴民",
+         "url" : "http://blog.sina.com.cn/s/blog_4cacf1f30102wdta.html"
+      },
+      {
+         "summary" : "徐贲：当今中国社会是一个心知肚明的假面社会...\n导语：怀疑主义可以是真理的起点，它映射出人类理性的反思能力，但在当今的中国，当我们谈到怀疑时，怀疑却仅仅等于绝不相...\n",
+         "title" : "当今中国社会是一个心知肚明的假面社会",
+         "url" : "http://blog.sina.com.cn/s/blog_4cacf1f30102wde7.html"
+      },
+      {
+         "summary" : "这就像现在中国所有的人都是“共产主义者”（拥护共产党），但只有最优秀的共产主义者才能成为光荣的共产党...\n纳粹时期，最大的组织是“德国劳工阵线”（DAF），90%的德国工人都是会员，这就和中国工人、教师等等几乎每个人都会自动成为工会会员一...\n",
+         "title" : "沉默和失忆的国民是怎样教育成的",
+         "url" : "http://blog.sina.com.cn/s/blog_4cacf1f30102wcww.html"
+      },
+      {
+         "summary" : "中国的“文革”发生至今也快要50年了，对于十几、二十的青少年来说，“文革”对他们犹如宣统皇帝（1911年退位）对我自己这一代人一样遥...\n",
+         "title" : "消弭于第三代的“文革”记忆",
+         "url" : "http://blog.sina.com.cn/s/blog_4cacf1f30102wbds.html"
+      },
+      {
+         "summary" : "当今中国的民生灾祸和民众“恐慌”...\n波及全国24省市的山东问题疫苗事件、上海公安部门破获1.7万罐假冒名牌奶粉案、常州外国语学校严重污染的校址环境导致学生健康受损、中国30大城市水源严重污染威胁8千万人的生命，不知还有多少“毒地”“毒水”在威胁更多人的健康和生...\n",
+         "title" : "当今中国的民生灾祸和民众“恐慌”",
+         "url" : "http://blog.sina.com.cn/s/blog_4cacf1f30102w9i3.html"
+      },
+      {
+         "summary" : "要理解编译期和执行期其实也非常好理解，你可以把计算机看做是一个英国人，而你是一个中国人，程序就是你写的一篇文章。...\n",
+         "title" : "一个屌丝程序猿的人生（39）",
+         "url" : "http://blog.jobbole.com/106922/"
+      },
+      {
+         "summary" : "【TechWeb报道】10月26日消息，中国民用航空局（以下简称民航局）再次发布与三星Note...\n7手机，其中也包括在中国范围内召回全部国行Note...\n",
+         "title" : "民航局：10月27日起三星Note7不能带上飞机",
+         "url" : "http://www.techweb.com.cn/tele/2016-10-26/2421161.shtml"
+      },
+      {
+         "summary" : "英国广播公司BBC作为全球最大的新闻机构之一，真的对中国很感兴...\n中国代购们在澳洲被BBC盯上了...\n",
+         "title" : "中国代购们在澳洲被BBC盯上了 他们普遍加价50%",
+         "url" : "http://www.techweb.com.cn/world/2016-10-26/2420817.shtml"
+      },
+      {
+         "summary" : "但三星方面&ldquo;拒绝与我共同检测&rdquo;，&ldquo;给三星中国打了至少50个电话&rdquo;，一直被告知等待处理意见。...\n&ldquo;三星中国（籍）的员工，（对我）态度不错，午饭是三星买单，中国员工很支持（我）&hellip;&hellip;&rdquo;...\n",
+         "title" : "国行Note 7机主：被三星韩国高管晾在办公室1天1夜",
+         "url" : "http://www.techweb.com.cn/tele/2016-10-26/2420858.shtml"
+      },
+      {
+         "summary" : "您可能也感兴趣:&nbsp;&nbsp;&nbsp;&nbsp;打赏女主播100万的土豪悲剧了：银行卡被...\n",
+         "title" : "Uber自动驾驶卡车成功送出第一单 跑了120英里挣了470美元",
+         "url" : "http://www.techweb.com.cn/world/2016-10-26/2420800.shtml"
+      },
+      {
+         "summary" : "在退出中国市场后，印度已成为Uber最重要的海外市...\n",
+         "title" : "复制阿里神话？传软银3亿美元投资印度版滴滴Ola",
+         "url" : "http://www.techweb.com.cn/internet/2016-10-26/2420598.shtml"
+      },
+      {
+         "summary" : "Ventures发布了三季度全球金融科技公司排名，全球排名前五的金融科技创新企业中有四家都来自中国，另有一家中国公司进入前十。...\n",
+         "title" : "小米note 2发布会没耍猴 锤子Big Bang随意发车",
+         "url" : "http://www.techweb.com.cn/wanbao/2016-10-25/2420331.shtml"
+      },
+      {
+         "summary" : "北京时间10月26日早间消息，滴滴出行总裁柳青表示，该公司将向中国以外的市场扩张，夺取全球份额。在此过程中，该公司有可能与一些国家的当地专车服务展开合作。...\n但与Uber不同的是，滴滴并未展开全球化扩张，而是基本将精力集中于中国市...\n",
+         "title" : "柳青：滴滴要展开国际化扩张 拟与当地专车服务合作",
+         "url" : "http://people.techweb.com.cn/2016-10-26/2420527.shtml"
+      },
+      {
+         "summary" : "内容产业已是中国互联网全新的增长点，某些领域如直播甚至更加先进...\n",
+         "title" : "王新宇：从马云座上宾到被淘汰 站长怎么玩死自己",
+         "url" : "http://wangxinyu.blog.techweb.com.cn/archives/347.html"
+      },
+      {
+         "summary" : "以下内容基于孙江涛的讲述，由36氪采访整理完成：1、功能机时代的支付机会我从2001年开始创业，缘起于当时中国移动发布的“移动梦网创业计划”——即允许sp合作伙伴使用中国移动的计费通道来提供增值服务，于是产生了一批依赖该支付通道的内容提供...\n那是因为，2008年到2016年这个周期是中国货币增发的阶段，很多行业欣欣向...\n",
+         "title" : "被美团收购支付牌照的幕后故事：在“被毁灭”与“被吞并”之间二选一",
+         "url" : "http://36kr.com/p/5055230.html?ktm_source=feed"
+      },
+      {
+         "summary" : "前两天听到说经纬中国最近三个月在虚拟现实这一领域投资挺猛，今天获悉他们已经投资了从锤子出来的原VR负责人罗子雄，创业方向也是一个看上去有些不起眼，但却有可能以工具切入成为未来入口的一个...\n",
+         "title" : "霜降了，来说说虚拟现实行业的G点在哪里？",
+         "url" : "http://36kr.com/p/5055226.html?ktm_source=feed"
+      },
+      {
+         "summary" : "这背后隐藏了什么样的品牌秘密？首先：UBER是共享经济的典型代表，它用互联网分享的创新模式，极大的颠覆了原有人们的用车模式，并且在全球有了大量的模仿者与跟随者，如中国的滴滴，印度的Olac...\n早年在亚信、chinaquest、Primeton等公司任管理职务，策划《SOA中国路线图》、《软件商竞争力成长路线图》、《CIO：失控与可控》、《微应用，大平台》等研究项目，合作著有畅销书《平台征战》，代笔《软件中国的机会》...\n",
+         "title" : "扭曲认知力场：初创品牌如何四步做到",
+         "url" : "http://36kr.com/p/5055108.html?ktm_source=feed"
+      },
+      {
+         "summary" : "5年前，按市值排名的五大公司中有五家从事石油行业：埃克森、中国石油和荷兰皇家壳牌，这依然是工业经济时代的代表，能源企业占据优...\n",
+         "title" : "阿里研究院潘永花：从全球市值BIG5公司看未来科技发展趋势",
+         "url" : "http://36kr.com/p/5055215.html?ktm_source=feed"
+      },
+      {
+         "summary" : "10月24日，“东方汇智-中腾信工薪贷1号资产支持专项计划”（简称“中腾信工薪贷ABS”）在中国证券投资基金业协会完成备案，即将挂牌深交所，发行规模近2.9亿...\n",
+         "title" : "监管层叫停，阿里京东之后，互联网消费金融ABS“一律不批”",
+         "url" : "http://36kr.com/p/5055218.html?ktm_source=feed"
+      },
+      {
+         "summary" : "国际巨头在巴塞罗那握手言欢，畅谈虚拟现实的无尽未来——而同样的梦想，也发生在&nbsp;2016&nbsp;年初的中国市...\n于近日采访了&nbsp;Unity&nbsp;中国研发中心主任、全球副总裁张俊波，他对这些问题做出了自己的回答。中国的特点就是能抄深蓝（以下简称...\n",
+         "title" : "VR 命运，并非只是寒冬？Unity 有话讲",
+         "url" : "http://36kr.com/p/5055109.html?ktm_source=feed"
+      },
+      {
+         "summary" : "不久前，外媒曾轮番报道以微信为代表的中国互联网产品的领先之处，《经济学人》在题为《中国的技术先驱》的封面文章中指出，“中国整个科技行业有更加积极和富有创造力的另一面...\n&nbsp;一系列产品，而在中国，一个微博就够...\n",
+         "title" : "微博炫出2016年的数据，感觉金光四射",
+         "url" : "http://36kr.com/p/5055182.html?ktm_source=feed"
+      },
+      {
+         "summary" : "中孝科技创始人兼CEO马长山创业前的身份之一是中国老教授协会城乡医疗帮扶中心副主任，在得到了某国企的合作意向后，促成了国企、商会及企业三方参与的PPP模式，共同输出医护人员、医疗设备、信息化建设等医疗资源和资...\n",
+         "title" : "PPP+（O+O），中孝科技从基层医疗延伸电商、金融、数据业务",
+         "url" : "http://36kr.com/p/5055098.html?ktm_source=feed"
+      },
+      {
+         "summary" : "据智研咨询发布的《2016-2022年中国美容行业深度调研与投资战略咨询报告》，2015年我国美容行业市场容量已达到6150亿...\n为了让质量和安全性进一步得到保障，美丽策得到了周展超等人的权威背书，并获得了中国光生物安全证...\n",
+         "title" : "美丽策发布家用美容仪智美光膜，想让医疗级光子嫩肤进入全民时代",
+         "url" : "http://36kr.com/p/5055188.html?ktm_source=feed"
+      },
+      {
+         "summary" : "今天的说的漫画《非人哉》也用到了九尾狐这样的经典形象，另外他们还中国传统神话中的各种妖怪形象添加在了其故事中，并将其人形化，分别对应能微博上能产生大量共鸣的性格以及日常，比如九尾狐可以看作一个标准的宅女老司机，白龙马则变成了一个喜闻乐见的暖男，粉丝让他跟面瘫的哪吒搞起了CP组...\n",
+         "title" : "传统妖怪故事怎么在当代成为爆款？非人哉除了搞笑日常，还加了点“性冷淡”色彩",
+         "url" : "http://36kr.com/p/5055144.html?ktm_source=feed"
+      },
+      {
+         "summary" : "这三个特点背后其实不单代表了微博的用户特征，也代表了中国目前的消费市场的特...\n",
+         "title" : "2.82亿月活跃用户，34万头部大号，“金V”认证将登场，所有跟微博相关的重要数据都在这了",
+         "url" : "http://36kr.com/p/5055202.html?ktm_source=feed"
+      },
+      {
+         "summary" : "在中国高等教育创新大会上，慧科集团宣布完成...\n教育公司威爱教育（Viveedu），专注于为中国高校提供...\n",
+         "title" : "慧科集团宣布完成 C 轮融资，首期成立 5 亿人民币慧科资本",
+         "url" : "http://36kr.com/p/5055198.html?ktm_source=feed"
+      },
+      {
+         "summary" : "Global，此外中国驾乘分享巨头滴滴出行。去年十二月，为了对抗全球驾乘分享巨头...\n中国业务，并且计划扩展东南亚、印度、以及美国市场。Ola...\n",
+         "title" : "软银欲对印度驾乘分享巨头 Ola 追加 3 亿美元投资，欲助其在本土对抗 Uber 竞争",
+         "url" : "http://36kr.com/p/5055160.html?ktm_source=feed"
+      },
+      {
+         "summary" : "看来要捉急的不仅仅是小米了，华为在中国市场的手机出货量居然被Vivo和OPPO挤到第三名了。10月25日，调研公司Counterpoint...\nResearch发布报告称，今年第三季度，Vivo和OPPO同时超越华为，成为中国市场前两大智能手机厂商，两个品牌都属于步步高集团旗下，共计占有接近三分之一的市场份...\n",
+         "title" : "三季度，Vivo和OPPO在中国赶超华为，在印度紧追小米",
+         "url" : "http://36kr.com/p/5055187.html?ktm_source=feed"
+      },
+      {
+         "summary" : "再一次迎来了一个没有中国人的赛季。不过，没有坐在板凳末席的中国球员，可能反而能让我们心平气和的欣赏这项最高水平的篮球赛事，看精彩刺激的球赛，感受其世界顶级的商业开发能力。在体育...\n",
+         "title" : "新赛季大戏揭幕，从这五个趋势读懂80亿美元的NBA商业新世界",
+         "url" : "http://36kr.com/p/5055166.html?ktm_source=feed"
+      },
+      {
+         "summary" : "“中国的乙型肝炎病毒（HBV）感染人数庞大，据卫计委2013年统计，中国有近1亿人是慢性HBV携带者，每年HBV的新发感染者达10万之...\n其是美国济生医药研究所创办人，自2006年该研究所成立以来，一直出任董事长，主持研制基因工程产品；张文亮毕业于中国农业大学，获生物化学博士学...\n",
+         "title" : "利用CRISPR基因编辑技术敲除乙肝病毒基因，新创康达基因希望能根治乙肝",
+         "url" : "http://36kr.com/p/5055146.html?ktm_source=feed"
+      },
+      {
+         "summary" : "然而，随着中国等全球主要智能手机市场的逐渐饱和，安卓高端机的强势登场（譬如Google最近推出的Pixel），中低端手机的疯狂“围剿”，外加不再那么让人动心的硬件产品，苹果似乎真的已经到达了一个临界点——顶峰过后，便是下坡...\n截止2016年第2季度，苹果在中国市场的销量已连续三个季度呈下滑态...\n",
+         "title" : "令人大失所望的苹果第四财季报告，让“苹果见顶论”再次甚嚣尘上",
+         "url" : "http://36kr.com/p/5055192.html?ktm_source=feed"
+      },
+      {
+         "summary" : "具体来说，国安是1994年中国职业足球联赛诞生以来唯一一家未曾变更过运营主体的俱乐部，中信持续性的经营让国安俱乐部在中国球市起伏中得以保持稳...\n",
+         "title" : "乐视宣告与国安正式分手：赞助费已付，国安寻找新买家",
+         "url" : "http://36kr.com/p/5055186.html?ktm_source=feed"
+      },
+      {
+         "summary" : "根据罗兰贝格发布的《中国母婴童市场研究报告》，2015&nbsp;年孕婴童行业规模为&nbsp;1.8...\n",
+         "title" : "先买断后销售，从童车入手的“益生活”也瞄准了母婴二手闲置市场",
+         "url" : "http://36kr.com/p/5054972.html?ktm_source=feed"
+      },
+      {
+         "summary" : "美国的DIY文化盛行，家里的汽车坏了，自己去修，中国则存在着远大于美国的准中介服务群体，有100万个房产经纪人，仅北京就有超过1000个搬家公...\n",
+         "title" : "姚劲波：创业永远要做未来的事情，不要嫌早",
+         "url" : "http://36kr.com/p/5055180.html?ktm_source=feed"
+      },
+      {
+         "summary" : "中国18亿亩耕地中，应用航空植保的只有2%，而美、日则已经超过...\n对于这一市场，真格基金合伙人兼CEO方爱之认为，中国的植保航空作业渗透率只有美国的三十五分之一，日本的二十五分之一，市场潜力巨...\n",
+         "title" : "供不应求的无人机植保服务仍处红利期，是否有交易平台机会？",
+         "url" : "http://36kr.com/p/5055126.html?ktm_source=feed"
+      },
+      {
+         "summary" : "超越华为成为中国前两大手机厂商北京时间10月25日晚间消息，调研公司...\n同时超越华为成为中国市场前两大智能手机厂商。报告显示，基于智能手机销量，今年第三季度...\n",
+         "title" : "8 点 1 氪：苹果第四财季业绩下滑； vivo 和 OPPO 超越华为成为中国前两大手机厂商； Google Pixel 手机预售大幅超过预期",
+         "url" : "http://36kr.com/p/5055184.html?ktm_source=feed"
+      },
+      {
+         "summary" : "近日，中共中央、国务院印发了《“健康中国2030”规划纲要》，并于10月25日全文公...\n",
+         "title" : "细读健康中国2030规划，掌握迎接16万亿市场的正确姿势",
+         "url" : "http://36kr.com/p/5055181.html?ktm_source=feed"
+      },
+      {
+         "summary" : "，大多数iPhone用户都只能“被推广”。而具有中国特色的是，雷锋网引述白帽汇的安全从业人员观点称，这次被发广告的...\n邮箱。因为中国有很多人用...\n",
+         "title" : "Apple ID被盗事件增多，小广告还钻进了 iPhone 相册",
+         "url" : "http://36kr.com/p/5055177.html?ktm_source=feed"
+      },
+      {
+         "summary" : "他在Twitter上写到：“白痴认为应该通过一个软件责任法，这样多少会影响一下中国卖到乌克兰的设...\n中国雄迈科技公司的网络摄像头在袭击中被利用，也宣布召...\n",
+         "title" : "美国东海岸断网事件后，物联网前景堪忧，越来越多的人呼吁政府加强监管",
+         "url" : "http://36kr.com/p/5055161.html?ktm_source=feed"
+      },
+      {
+         "summary" : "阿里体育进军高尔夫顶级赛事今日，阿里体育挥杆进军高尔夫顶级赛事LPGA（美国女子职业高尔夫巡回赛），获得LPGA在中国一站比赛未来10年的独家商务开发运营权以及中国大陆地区独家媒体权...\n",
+         "title" : "【大公司晚报】亚马逊微型无人机专利曝光；微博自媒体年入超百亿",
+         "url" : "http://36kr.com/p/5055172.html?ktm_source=feed"
+      },
+      {
+         "summary" : "根据《中华人民共和国道路交通安全法》，只要是合格驾驶证照的持有者，都可以在中国境内驾驶与其证照相匹配的机动...\n中国政法大学公司法与投资保护研究所...\n",
+         "title" : "在专家学者眼里，该如何\"鼓励和规范\"私人小客车合乘?",
+         "url" : "http://36kr.com/p/5055174.html?ktm_source=feed"
+      },
+      {
+         "summary" : "“中国有3000家餐饮收银软件，做得最好得市场份额也不超�...\n",
+         "title" : "餐饮业已有对手3000，“来客”举着“高可配置”的大旗进场厮杀",
+         "url" : "http://36kr.com/p/5055128.html?ktm_source=feed"
+      },
+      {
+         "summary" : "LP，这家私募专注中国旅游领域的投资，而携程就是该基金的出资人之...\n对中国公司而言，从美国市场退市再登陆其他市场的成功案例较...\n",
+         "title" : "去哪儿网的私有化之路，下一步去哪儿？",
+         "url" : "http://36kr.com/p/5055158.html?ktm_source=feed"
+      },
+      {
+         "summary" : "每次到美国，都会遇到准备创业的朋友，大多有很好的技术积累，但总是面对一个问题：怎么才能在异国创业起步？对此，我的回答通常是：回头是岸！中国是除了美国以外唯一一个市场大、投资供给充分的国...\n中国不缺资本，但天使投资行业比美国落后了10年！融资过程中，在创业者和投资人之间知识完全不对等，硅谷有个SAFE模式，国内没有，创业者吃亏的现象比比皆...\n",
+         "title" : "冬天的海龟，回头是岸",
+         "url" : "http://36kr.com/p/5055148.html?ktm_source=feed"
+      },
+      {
+         "summary" : "在中国区高调招人，准备建立研发中心，设立专门的产品和开发团队，似要在中国大展拳...\n商业模式受质疑，住百家的困境之源？虽然号称中国...\n",
+         "title" : "共享住宿开始了冲刺赛，高速增长的住百家能应对自身的“经济危机”吗？",
+         "url" : "http://36kr.com/p/5055143.html?ktm_source=feed"
+      },
+      {
+         "summary" : "7后，这款手机由于电池易爆问题导致全球召回。这给予中国手机产商以巨大的机会，能够填补三星缺位后的市场空缺。然而，小米作为首位推出双曲面屏幕的安卓手机厂商，以及此次外观极为类似Galaxy...\n由于三星在10月紧急召回Note7，缺位了今年的中国智能手机市场，这也给予中国其他国产手机厂商巨大的机会来填补这块市...\n",
+         "title" : "雷军拿出“双曲面玻璃”、“全面屏概念手机”，又一次冲刺高端市场",
+         "url" : "http://36kr.com/p/5055150.html?ktm_source=feed"
+      },
+      {
+         "summary" : "图片来源：人民网财经如今不仅是移动支付普及率全球领先的中国，连美国的银行业开始断臂求...\n据新京报报道，花旗银行在今年年初相继关闭了三家中国分行，包括深圳前海支行、北京望京支行和大连星海湾支...\n",
+         "title" : "全球零售银行业大幅裁员撤店，科技金融有何机会？",
+         "url" : "http://36kr.com/p/5055138.html?ktm_source=feed"
+      },
+      {
+         "summary" : "本文来自春晓资本，内容为春晓资本合伙人何文在“2016中国B2B高峰论坛”的分...\n",
+         "title" : "春晓资本何文：B2B的春天源自一场流通分销体系的变革",
+         "url" : "http://36kr.com/p/5055142.html?ktm_source=feed"
+      },
+      {
+         "summary" : "而中国大多数人这时候就选择转行...\n虽然出的快换的快，但也证明市场是可以继续容纳的，更别说中国才刚刚开...\n",
+         "title" : "火秀娱乐：TFBOYS 可遇不可求，互联网造星的机会在“腰部艺人”",
+         "url" : "http://36kr.com/p/5055119.html?ktm_source=feed"
+      },
+      {
+         "summary" : "如果单纯看出租车市场，确实不是很大：中国有100万出租车司机，假设平均每人每月赚5000元，那么1年就是600亿人民币，而且出租车司机需要每天工作十几个小时才能赚这些钱，要从他们身上赚钱是不容易...\n",
+         "title" : "朱啸虎：如何发掘千亿级市场机会？",
+         "url" : "http://36kr.com/p/5055137.html?ktm_source=feed"
+      },
+      {
+         "summary" : "安可济目前的团队规模约80人,其中在美国的科研团队约20人，中国团队约60...\n",
+         "title" : "自主研发 Firelfy 技术，安可济希望以产品和技术优势切入液体活检市场",
+         "url" : "http://36kr.com/p/5055092.html?ktm_source=feed"
+      },
+      {
+         "summary" : "&nbsp;近两年，一大批中国的创业者和投资人扬帆出海，来到印...\n一年前，他加入中国一支新基金——零一创投，担任合伙...\n",
+         "title" : "泳帽、摩托车和热钱，中国创投圈在印尼的真实故事 | 36氪特稿",
+         "url" : "http://36kr.com/p/5055135.html?ktm_source=feed"
+      },
+      {
+         "summary" : "Churn）是第一位需要考虑的。流失低于5%的产品如Slack如同黑暗中耀眼的明星，可惜目前中国还没有。超过80%的留存应该是及格线。MRR/ARR（Monthly...\n增长就是营收的增长在当下的中国...\n",
+         "title" : "【创业者说】金数据陈金洲：不谈营收的 SaaS 增长都是耍流氓",
+         "url" : "http://36kr.com/p/5055133.html?ktm_source=feed"
+      },
+      {
+         "summary" : "中国网购商品行情系统的数据显示，2013年雾霾在全国爆发，空气净化器市场呈现爆发式增长，销售量、销售额同比增幅高达130.6%和162.7%；2014年增幅回落，销售量、销售额的增幅分别为35.7%和31...\n",
+         "title" : "猎豹升级豹米空气净化器，三年不换芯能否撬动市场？",
+         "url" : "http://36kr.com/p/5055117.html?ktm_source=feed"
+      },
+      {
+         "summary" : "日），中国航空及物流行业巨头海南航空集团（HNA...\n事实上，如今中国已经成为全球最大的出境旅游市场，很多国内企业也在不断尝试“出海...\n",
+         "title" : "优化旅游产业链布局，海南航空斥资 65 亿美元收购希尔顿 25% 股份",
+         "url" : "http://36kr.com/p/5055123.html?ktm_source=feed"
+      },
+      {
+         "summary" : "在房地产领域已有很多类似例子，因少数人的好大喜功而建立起的“空城”、“鬼城”、“空楼”、“空壳产业园”等等，数不胜数；在互联网角度而言，客观地讲，中国已拥有了数量庞大的工程师人才，现在搭建起一个互联网平台，难度并不...\n",
+         "title" : "阿里研究院崔瀚文：当谈论生态型组织，应当关注什么",
+         "url" : "http://36kr.com/p/5055116.html?ktm_source=feed"
+      },
+      {
+         "summary" : "编者按：本文内容来自粉丝网《中国粉丝报告》2016年9月第一期，36氪经授权发...\n&nbsp;五、粉丝应援渐成气候，类型多样声势浩大9月粉丝大事件《中�...\n",
+         "title" : "粉丝经济新浪潮：谁在潮头？谁的粉丝最“壕”？",
+         "url" : "http://36kr.com/p/5055120.html?ktm_source=feed"
+      },
+      {
+         "summary" : "长江证券、中国人寿...\nCEO孔令文是哈工大计算机硕士，曾供职某央企，完成多项国家级工程和科研项目。大拇哥曾获北青集团控股的北青龙腾投资管理(北京)有限公司、中国华贸投资有限公司等投资。我是36...\n",
+         "title" : "为政府项目提供融资的同时，大拇哥还研发了支持业务的区块链 ",
+         "url" : "http://36kr.com/p/5055106.html?ktm_source=feed"
+      },
+      {
+         "summary" : "早年在亚信、chinaquest、Primeton等公司任管理职务，策划《SOA中国路线图》、《软件商竞争力成长路线图》、《CIO：失控与可控》、《微应用，大平台》等研究项目，合作著有畅销书《平台征战》，代笔《软件中国的机会》...\n",
+         "title" : "初创品牌获取用户的起点：从建立认知开始，像飞机滑行一样启动",
+         "url" : "http://36kr.com/p/5055069.html?ktm_source=feed"
+      },
+      {
+         "summary" : "元，中国首发！将于9月9日正式在...\n中国官网上开始预售。是的，这次发布会的内容大多都被剧透也都被猜对了，大家可以尽情的吐槽，但...\n",
+         "title" : "[来自异次元] 苹果发布 iPhone 7 以及 AirPods 无线耳机 - 中国首发，5388 元开始预售",
+         "url" : "http://www.iplaysoft.com/iphone7.html"
+      },
+      {
+         "summary" : "套锅历史低价，蒸焖炖汤均可~亚马逊中国目前售价1599元包邮，低于历史推荐好...\n",
+         "title" : "WMF 厨房套装 压力锅快易锅6.5L+中华炒锅32cm+煎锅平底锅24cm 1599元包邮",
+         "url" : "http://www.smzdm.com/p/6544766/"
+      },
+      {
+         "summary" : "新蛋中国目前售价1639元，可以使用蛋券“sm60”做到1609元到手的价格，有兴趣的值友可以关注一...\n",
+         "title" : "MEIZU 魅族 MX6 全网通手机 1609元包邮(1639-30)",
+         "url" : "http://www.smzdm.com/p/6544490/"
+      },
+      {
+         "summary" : "不锈钢中加入18%铬+10%镍，更防锈耐腐蚀~亚马逊中国目前售价1059元，持平之前推荐的秒杀价格，需要的可以看下。本文来自什么值得买网站（www.smzdm.com）。...\n",
+         "title" : "WMF 福腾宝 Perfect 压力锅 6.5 L 1059元包邮",
+         "url" : "http://www.smzdm.com/p/6544708/"
+      },
+      {
+         "summary" : "早在几年前，在Github上放出了当成Apollo飞船使用的源代码（当然是汇编的），但完全不明白为什么这几天会有一些中国的小朋友到这个github的issue里用灌水……，人类历史上这么伟大的一件事，为什么不借这个机会学习一下呢？下面是一些阿波罗登月与程序员相关的小故事，顺着这些东西，你可以把你的周末和精力用得更有价...\n",
+         "title" : "50年前的登月程序和程序员有多硬核",
+         "url" : "https://coolshell.cn/articles/19612.html"
+      },
+      {
+         "summary" : "要超过别人其实还是比较简单的，尤其在今天的中国，更是简...\n",
+         "title" : "如何超过大多数人",
+         "url" : "https://coolshell.cn/articles/19464.html"
+      },
+      {
+         "summary" : "在几个头部的程序员大国中，中国的程序员最乐观的，他们相信在今天出生的人会有比他们父母更好的人生。对于欧洲的程序员来说，比较法国和德国的程序员，他们对未来并不太乐观。...\n在第一部分中，我们可以看到，中国程序员参与这个调查的并不多，程序员主要集中在美国、欧洲、印度这三个地...\n",
+         "title" : "StackOverflow 2019 程序员调查",
+         "url" : "https://coolshell.cn/articles/19307.html"
+      },
+      {
+         "summary" : "语言这十年的迅猛发展大到连他们自己都没有想到，并且还成为了云计算领域中新一代的开发语言。还提到了，中国程序员对...\n负责人也和我表达了相似的感叹：他们完全没有想到居然中国有那么多人喜欢...\n",
+         "title" : "Go语言、Docker 和新技术",
+         "url" : "https://coolshell.cn/articles/18190.html"
+      }
+   ]
+}
+ [include/Redis.h : set:49]
+2019-09-02 20:43:59,077 [INFO] 127.0.0.1:5080 --> 127.0.0.1:5080 disconnected [src/WordQueryServer.cc : onClose:36]
+2019-09-02 20:44:07,499 [INFO] 127.0.0.1:5080 --> 127.0.0.1:5080 connected [src/WordQueryServer.cc : onConnection:22]
+2019-09-02 20:44:07,499 [INFO] receive from client: 腾讯 [src/WordQueryServer.cc : onMessage:30]
+2019-09-02 20:44:07,500 [DEBUG] Succeed to execute command: GET 腾讯 [include/Redis.h : get:36]
+2019-09-02 20:44:07,500 [DEBUG] cache hit: 腾讯 [src/WordQuery.cc : doQuery:102]
+2019-09-02 20:44:07,500 [DEBUG] cache miss, query invert index [src/WordQuery.cc : doQuery:104]
+2019-09-02 20:44:07,504 [DEBUG] Succeed to execute command: SET 腾讯 {
+   "files" : [
+      {
+         "summary" : "开发工具、UI框架也都是腾讯做的，过去Web上的三方工具、框架生态，完全没有用。...\n顺便也澄清一个误区，小程序和腾讯X5引擎也没关系。X5是QQ浏览器团队的，是基于HTML的，但小程序是微信团队自研的。...\n",
+         "title" : "微信小程序，大多数人都搞错的八个问题",
+         "url" : "http://www.iteye.com/news/31864"
+      },
+      {
+         "summary" : "为确保微信小程序平台、微信公众平台、其他用户等各方的安全、稳定及良好的用户体验，腾讯将对需要发布的小程序进行发布审核。...\n“发布审核”是指由用户发起，将其完成初始化开发的小程序提交至腾讯，由腾讯自行或委托第三方对该小程序的合法性、合理性、安全性、稳定性、可操作性、用户体验等各方面，采用包括但不限于开发信息核对、安全测试、UI测试、随机测试、动态测试、安全测试等方式，进行审查、甄别、试验与评估的过...\n",
+         "title" : "详解微信小程序开发教程",
+         "url" : "http://www.iteye.com/news/31862"
+      },
+      {
+         "summary" : "假设我是腾讯新闻的...\n腾讯微博,...\n",
+         "title" : "被 ｢阉割｣ 的分享与应用间的墙",
+         "url" : "http://www.phonekr.com/android-share-in-mainland-china/"
+      },
+      {
+         "summary" : "腾讯终于扭扭捏捏地把微信改成了靠近...\n不认为腾讯因为...\n",
+         "title" : "｢数据? 那是什么? 能吃么? 好吃么?｣",
+         "url" : "http://www.phonekr.com/do-not-get-tricked-by-data/"
+      },
+      {
+         "summary" : "继「神海」系列总监跳槽腾讯旗下工作室之后，该游戏编剧和创意总监...\n",
+         "title" : "异闻录 20：我们中出了个叛徒",
+         "url" : "http://www.phonekr.com/tensei-20/"
+      },
+      {
+         "summary" : "腾讯与央行联合推出首个金融教育微信小游戏腾讯公司与中国人民银行金融消费权益保护局联合推出的首个金融教育微信小游戏《钱袋子保卫战》正式上...\nQQ发布新版本8.1.3，上线“一起听歌”、“16人视频通话”等功能腾讯QQ发布安卓8.1.3版本，新增一起听歌、16人视频通话、打卡相机、视频浮窗、消息朗读、群友卡片等新功...\n",
+         "title" : "氪星晚报 | 法拉第未来CEO贾跃亭拟将辞职​；Costco上海卖场限流2000人；魅族发布16s Pro手机和高级阳伞",
+         "url" : "http://36kr.com/p/5240461.html?ktm_source=feed"
+      },
+      {
+         "summary" : "（腾讯科技）拜腾M-Byte量产车型将于9月10日亮相，预计年底投产拜腾官方透露，旗下拜腾M-Byte量产车型将亮相于9月10日开幕的2019法兰克福车...\n",
+         "title" : "卡门简报 | 贾跃亭或辞任法拉第未来CEO；国产版Model 3将亮相",
+         "url" : "http://36kr.com/p/5240488.html?ktm_source=feed"
+      },
+      {
+         "summary" : "门户时代BAT（百度、阿里、腾讯）只是互联网时代的说法，并非代表全部互联网企业的成功模...\n",
+         "title" : "从BAT到TMD，下一个10年属于ABCD",
+         "url" : "http://36kr.com/p/5240415.html?ktm_source=feed"
+      },
+      {
+         "summary" : "Summit，简称CSS)召开前，主办方联合腾讯研究院《腾云》期刊组织了一场关于互联网安全的沙龙，邀请了行业知名专家学者、一线安全工程师，为本届CSS安全峰会做了统筹思想、主题定调的会前准...\n在腾讯平台上，分分秒秒发生着交往、交易，这些传播行为是大数据基础基于十亿、数十亿人口的实时、整体、融合、演进、连接一切的网络环境和态...\n",
+         "title" : "段永朝为CSS安全峰会破题：连接赋能 安全升维",
+         "url" : "http://www.leiphone.com/news/201610/yZqgKlrzvU4Eeng3.html"
+      },
+      {
+         "summary" : "不惮说出腾讯本质上是一个游戏公司的事实。所以他们选择了受众同样广泛的教育，同时，在体验方面，严格围绕微信原生的交互做文章。“如果要加载很多页面，速度会非常慢。Yoli...\n",
+         "title" : "Yoli口语：一个美国人的微信生意",
+         "url" : "http://www.leiphone.com/news/201610/ZrLUUomU67afORa9.html"
+      },
+      {
+         "summary" : "峰会召开前夕，主办方于10月10日联合腾讯研究院《腾云》期刊在北京举办了一场关于互联网安全的沙...\n预计今年CSS安全峰会将有近万人次参与，全球范围的与会企业将突破500家，包括苹果、微软、高通、谷歌、思科、英特尔、McAfee等国际顶尖企业将会派出重量级嘉宾参会，他们将与腾讯、百度、京东等中国领袖企业的顶级专家在此基础上，深入探讨如何加速构建安全生态，让安全生态持续生长、智慧生...\n",
+         "title" : "潘柱廷：循互联网安全之路，助力CSS峰会连接赋能",
+         "url" : "http://www.leiphone.com/news/201610/LCOD9ZUUtPeBoCJa.html"
+      },
+      {
+         "summary" : "群主可开启进群确认腾讯科技10月25日，微信发布新版本，在最新版本6.3.28中，对群功能进行了两项功能升...\n",
+         "title" : "销售疲软？苹果十五年来首次营收下滑； 微信群新功能：群聊能收钱、进群需确认 | 雷锋早报",
+         "url" : "http://www.leiphone.com/news/201610/ahPH5CNQxCWDUubJ.html"
+      },
+      {
+         "summary" : "妈妈的手机→基站→千里之外腾讯服务器→基站→我手机→蓝牙到手表的...\n",
+         "title" : "麦步智能手表试用体验：超长待机是硬道理，开放平台是未来",
+         "url" : "https://xbeta.info/maibu-watch.htm"
+      },
+      {
+         "summary" : "我现在如需发布，是操作录屏则发B站（低码率而清晰，真正高效环保）；拍摄的视频则直接iPhone录制，用优酷/腾讯等视频客户端直接上传。...\n",
+         "title" : "【转载+补充】最强免费萤幕录影软体 ActivePresenter 教学影片神器",
+         "url" : "https://xbeta.info/activepresenter.htm"
+      },
+      {
+         "summary" : "5月，腾讯微云宣布关闭文件中转站功能。...\n一方面的确是为了配合打击网络色情与盗版，但这样简单粗...\n",
+         "title" : "云盘关停背后：摆上台面的都是借口 真相只有一个",
+         "url" : "http://www.techweb.com.cn/irouter/2016-10-26/2420443.shtml"
+      },
+      {
+         "summary" : "从这点上，微博似乎有了BAT的影子，从腾讯开始，中国互联网三巨头近几年的打法几乎都是只投资而不控股，强调布...\n",
+         "title" : "微博炫出2016年的数据，感觉金光四射",
+         "url" : "http://36kr.com/p/5055182.html?ktm_source=feed"
+      },
+      {
+         "summary" : "服务的是腾讯、完美世界这样的客户，但由于传播的主阵地在微博这样的社交平台上，客户的需求点在于用户的反馈，而转过来做内容后，这种用户为先的思路其实是一脉相承的，过去在传播领域的经验也在扩大内容影响力方面起到了作...\n",
+         "title" : "传统妖怪故事怎么在当代成为爆款？非人哉除了搞笑日常，还加了点“性冷淡”色彩",
+         "url" : "http://36kr.com/p/5055144.html?ktm_source=feed"
+      },
+      {
+         "summary" : "亿美元。除此之外，像与腾讯等转播分销合同，各个国家、地区的区域赞助合作的签订，以及...\n",
+         "title" : "新赛季大戏揭幕，从这五个趋势读懂80亿美元的NBA商业新世界",
+         "url" : "http://36kr.com/p/5055166.html?ktm_source=feed"
+      },
+      {
+         "summary" : "百度、腾讯、阿里巴巴当时都知道分类信息可能是一个很大的市场，但这些巨头也知道这个市场要起来可能需要经过10年或8年，需要去教育市场，可能还会面临亏...\n",
+         "title" : "姚劲波：创业永远要做未来的事情，不要嫌早",
+         "url" : "http://36kr.com/p/5055180.html?ktm_source=feed"
+      },
+      {
+         "summary" : "小米、腾讯、华为等智能硬件和互联网企业纷纷想进入无人机市场分一杯羹，张庆旗认为相比这些企业星图是有先发优势...\n",
+         "title" : "消费级航拍无人机热潮继续，星图智控获得7200万元B轮融资",
+         "url" : "http://36kr.com/p/5055168.html?ktm_source=feed"
+      },
+      {
+         "summary" : "会上，阿里巴巴、腾讯、京东、58同城、滴滴快滴、百度、奇虎360、顺丰速运等国内主要企业代表共同签订了反“炒信”信息共享协...\n",
+         "title" : "【大公司晚报】亚马逊微型无人机专利曝光；微博自媒体年入超百亿",
+         "url" : "http://36kr.com/p/5055172.html?ktm_source=feed"
+      },
+      {
+         "summary" : "那时，腾讯、阿里、百度完成第二轮融资，背后全是海外投资机构；红杉、经纬等海外VC尚未进入中国，除了少量先行者外，本土机构更是寥寥无...\n他在接受腾讯采访时表示印尼的风投价格要低很多：A轮价格在100万-200万美元之间，大概可以占股15-25%，而天使轮则只有10多万美...\n",
+         "title" : "泳帽、摩托车和热钱，中国创投圈在印尼的真实故事 | 36氪特稿",
+         "url" : "http://36kr.com/p/5055135.html?ktm_source=feed"
+      },
+      {
+         "summary" : "粉丝好感度（推荐度）最高的TOP3除上述提到的《识汝不识丁》之外，还有青春题材的《一起同过窗》，腾讯视频热播剧，粉丝推荐度87.00，粉丝推荐单榜第一名，以清新自然的风格和精良的制作取得不错的口碑，但演员选择并非强势吸粉的类型，整体粉丝指数不占优势；《画江湖之不良人》，爱奇艺热推剧，同名的国产武侠动画连续剧同期热播，IP多元化精品网剧代表作，粉丝推荐度82.90...\n",
+         "title" : "粉丝经济新浪潮：谁在潮头？谁的粉丝最“壕”？",
+         "url" : "http://36kr.com/p/5055120.html?ktm_source=feed"
+      },
+      {
+         "summary" : "Leap，该公司据称也在致力于眼动交互技术。附上一张图展示下谷歌在VR的布局：图片源于腾讯科技相关报道：把眼睛转化为鼠标，Eyefluence...\n",
+         "title" : "谷歌收购眼动追踪技术公司Eyefluence，VR布局再下一城",
+         "url" : "http://36kr.com/p/5055104.html?ktm_source=feed"
+      },
+      {
+         "summary" : "的电脑桌面版客户端，方便使用电脑键盘替代手机快速输入聊天。于是腾讯推出了微信的网页版，用户可以在浏览器上收发信息。...\n不过人们对微信电脑版桌面客户端的呼声依然很高，在腾讯推出了...\n",
+         "title" : "[来自异次元] 微信电脑版下载 - 官方PC版 Windows / Mac 桌面客户端，像QQ一样聊微信！",
+         "url" : "http://www.iplaysoft.com/weixin.html"
+      },
+      {
+         "summary" : "2.0，但是并不好，因为大多数网关代理会把整个URI请求记到日志中。我们只要脑补一下腾讯的网关的Access...\n",
+         "title" : "HTTP API 认证授权术",
+         "url" : "https://coolshell.cn/articles/19395.html"
+      }
+   ]
+}
+ [include/Redis.h : set:49]
+2019-09-02 20:44:07,505 [INFO] 127.0.0.1:5080 --> 127.0.0.1:5080 disconnected [src/WordQueryServer.cc : onClose:36]
+2019-09-02 20:47:27,227 [INFO] 127.0.0.1:5080 --> 127.0.0.1:5080 connected [src/WordQueryServer.cc : onConnection:22]
+2019-09-02 20:47:27,227 [INFO] receive from client: linux [src/WordQueryServer.cc : onMessage:30]
+2019-09-02 20:47:27,227 [DEBUG] Succeed to execute command: GET linux [include/Redis.h : get:36]
+2019-09-02 20:47:27,227 [ERROR] Error:  [include/Redis.h : get:39]
+2019-09-02 20:47:27,227 [DEBUG] cache miss, query invert index [src/WordQuery.cc : doQuery:104]
+2019-09-02 20:47:27,228 [DEBUG] Succeed to execute command: SET linux {
+   "files" : [
+      {
+         "summary" : "开发用window没什么问题，但是我们做的应用绝大部分是要放在linux系统来对外提供服务器，所以不懂linux的操作是不行的，并且服务器为了尽可能节省资源，都是不使用界面的，所以我们要学好大量的linux命...\n",
+         "title" : "后端成长之路：从菜鸟到架构",
+         "url" : "http://blog.jobbole.com/107025/"
+      },
+      {
+         "summary" : "http://man7.org/linux/man-pages/man7/udp.7.html...\n",
+         "title" : "深入Go UDP编程",
+         "url" : "http://blog.jobbole.com/107004/"
+      },
+      {
+         "summary" : "三种新的fd加入linux内核的的版本：...\n",
+         "title" : "Linux 新的API signalfd、timerfd、eventfd使用说明",
+         "url" : "http://blog.jobbole.com/106933/"
+      }
+   ]
+}
+ [include/Redis.h : set:49]
+2019-09-02 20:47:27,228 [INFO] 127.0.0.1:5080 --> 127.0.0.1:5080 disconnected [src/WordQueryServer.cc : onClose:36]
+2019-09-02 20:50:42,348 [DEBUG] read config file success [src/Configuration.cc : readFile:49]
+2019-09-02 20:50:43,921 [DEBUG] load rigepage success, size = 389 [src/WordQuery.cc : loadLibrary:72]
+2019-09-02 20:50:44,088 [DEBUG] load invert index success, size = 34614 [src/WordQuery.cc : loadLibrary:93]
+2019-09-02 20:50:44,088 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:50:44,088 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:50:44,091 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:50:44,091 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:50:44,092 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:50:44,092 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:50:44,092 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:50:44,092 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:50:44,092 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:50:44,092 [DEBUG] Connect to Redis server success [include/Redis.h : connect:30]
+2019-09-02 20:50:57,199 [INFO] 127.0.0.1:5080 --> 127.0.0.1:5080 connected [src/WordQueryServer.cc : onConnection:22]
+2019-09-02 20:50:57,199 [INFO] receive from client: 腾讯 [src/WordQueryServer.cc : onMessage:30]
+2019-09-02 20:50:57,199 [DEBUG] Succeed to execute command: GET 腾讯 [include/Redis.h : get:36]
+2019-09-02 20:50:57,199 [DEBUG] cache hit: 腾讯 [src/WordQuery.cc : doQuery:102]
+2019-09-02 20:50:57,200 [INFO] 127.0.0.1:5080 --> 127.0.0.1:5080 disconnected [src/WordQueryServer.cc : onClose:36]

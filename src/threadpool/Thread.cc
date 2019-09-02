@@ -1,11 +1,12 @@
 #include "threadpool/Thread.h"
+#include "Redis.h"
 #include <iostream>
 #include <string>
 using std::string;
 
 namespace wd {
 namespace current_thread {
-__thread int threadID;
+__thread Redis* predis;
 }
 
 void Thread::start() {
@@ -14,12 +15,14 @@ void Thread::start() {
 }
 
 void* Thread::threadFunc(void* arg) {
+    current_thread::predis = new Redis(); 
+    current_thread::predis->connect("127.0.0.1", 6379);
+
     Thread* pThread = static_cast<Thread*>(arg);
-    current_thread::threadID = pThread->_id; 
     if (pThread) {
         pThread->_cb();  //执行任务
     }
-    
+    delete current_thread::predis;
     return nullptr;
 }
 

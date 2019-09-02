@@ -3,8 +3,8 @@
 #include <cmath>
 #include <fstream>
 #include <sstream>
+#include "Redis.h"
 #include "json/json.h"
-#include "mylogger.h"
 #include "tinyxml2.h"
 using namespace tinyxml2;
 using std::ifstream;
@@ -13,6 +13,10 @@ using std::make_pair;
 using std::stoi;
 
 namespace wd {
+namespace current_thread {
+extern __thread Redis* predis;
+}  // namespace current_thread
+
 struct SimilarityCompare {
     SimilarityCompare(vector<double>& base) : _base(base) {}
 
@@ -93,13 +97,21 @@ string WordQuery::doQuery(const string& str) {
     if (str.size() == 0) {
         return returnNoAnswer();
     }
+    string ret = current_thread::predis->get(str);
+    if (ret != "-1") {
+        LogDebug("cache hit: %s", str.c_str());
+        return ret;
+    }
+    LogDebug("cache miss, query invert index");
     vector<string> queryWords;
     queryWords = _jieba(str);
     for (auto& item : queryWords) {
         auto it = _invertIndex.find(item);
         if (it == _invertIndex.end()) {
             LogInfo("%s not found", item.c_str());
-            return returnNoAnswer();
+            ret = returnNoAnswer();
+            current_thread::predis->set(str, ret);
+            return ret;
         }
     }
     //计算每个词的权重
@@ -108,7 +120,9 @@ string WordQuery::doQuery(const string& str) {
     vector<int> pages = getPages(queryWords);
     if (pages.size() == 0) {
         LogInfo("Not found");
-        return returnNoAnswer();
+        ret = returnNoAnswer();
+        current_thread::predis->set(str, ret);
+        return ret;
     }
 
     vector<pair<int, vector<double>>> resultList;
@@ -129,7 +143,9 @@ string WordQuery::doQuery(const string& str) {
     for (auto& item : resultList) {
         pages.push_back(item.first);
     }
-    return createJson(pages, queryWords);
+    ret = createJson(pages, queryWords);
+    current_thread::predis->set(str, ret);
+    return ret;
 }
 
 vector<int> WordQuery::getPages(vector<string> queryWords) {

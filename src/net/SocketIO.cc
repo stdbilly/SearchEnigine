@@ -83,7 +83,7 @@ int SocketIO::writen(const char* buf, int len) {
         }
     }
 
-    printf("<< writen finish\n");
+    printf(">> writen finish\n");
     return len - left;
 }
 }  // namespace wd

@@ -28,7 +28,7 @@ Task Threadpool::getTask() { return _taskque.pop(); }
 void Threadpool::start() {
     for (size_t idx = 0; idx != _threadNum; ++idx) {
         unique_ptr<Thread> thread(
-            new Thread(std::bind(&Threadpool::threadFunc, this), idx));
+            new Thread(std::bind(&Threadpool::threadFunc, this)));
         _threads.push_back(std::move(thread));
     }
 
