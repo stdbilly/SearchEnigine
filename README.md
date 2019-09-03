@@ -45,6 +45,7 @@
 
   ```shell
   cd offline
+  mkdir bin
   make
   ./bin/offline.exe
   ```
@@ -53,6 +54,7 @@
 
   ```shell
   cd ..
+  mkdir bin
   make
   ./bin/SearchEngine.exe
   ```
