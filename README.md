@@ -1,8 +1,8 @@
-# Rss Search Enigine
+# Search Enigine
 
 ### 简介
 
-基于Rss文本检索的轻量级搜索引擎
+基于文本检索的轻量级搜索引擎
 
 ### 特性
 
