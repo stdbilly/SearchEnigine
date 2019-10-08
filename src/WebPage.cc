@@ -1,7 +1,7 @@
 #include "WebPage.h"
 #include <iostream>
 #include <sstream>
-#include "Configuration.h"
+//#include "Configuration.h"
 using std::cout;
 using std::endl;
 using std::istringstream;

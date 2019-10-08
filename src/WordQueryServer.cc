@@ -28,7 +28,7 @@ void WordQueryServer::onMessage(const TCPConnectionPtr& conn) {
         msg.erase(msg.size() - 1, 1);
     }
     LogInfo("receive from client: %s",msg.c_str());
-
+    //向任务队列中添加任务
      _threadpool.addTask(std::bind(&WordQueryServer::process, this, conn, msg));
 }
 

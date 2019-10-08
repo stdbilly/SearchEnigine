@@ -16,6 +16,7 @@ class TaskQueue {
     void push(ElemType);
     ElemType pop();
     void wakeup();
+
    private:
     size_t _queSize;
     queue<ElemType> _que;
